@@ -1,0 +1,84 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "aaa",
+      "roll": "admin"
+    },
+    {
+      "uname": "nil",
+      "email": "nil@gmail.com",
+      "password": "123",
+      "roll": "user",
+      "id": 2
+    },
+    {
+      "uname": "nil",
+      "email": "nil@gmail.com",
+      "password": "123",
+      "roll": "user",
+      "id": 3
+    },
+    {
+      "uname": "yash",
+      "email": "yash@gmail.com",
+      "password": "123",
+      "roll": "user",
+      "id": 4
+    },
+    {
+      "uname": "yash",
+      "email": "yash@gmail.com",
+      "password": "123",
+      "roll": "user",
+      "id": 5
+    },
+    {
+      "uname": "yash",
+      "email": "yash@gmail.com",
+      "password": "123",
+      "roll": "user",
+      "id": 6
+    },
+    {
+      "uname": "raj",
+      "email": "raj@gmail.com",
+      "password": "123",
+      "roll": "user",
+      "id": 7
+    },
+    {
+      "uname": "mit",
+      "email": "mit@gmail.com",
+      "password": "123",
+      "roll": "user",
+      "id": 8
+    },
+    {
+      "uname": "yokai",
+      "email": "yokai@gmail.com",
+      "password": "123",
+      "roll": "user",
+      "id": 9
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
