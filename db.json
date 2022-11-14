@@ -15,27 +15,6 @@
       "id": 2
     },
     {
-      "uname": "nil",
-      "email": "nil@gmail.com",
-      "password": "123",
-      "roll": "user",
-      "id": 3
-    },
-    {
-      "uname": "yash",
-      "email": "yash@gmail.com",
-      "password": "123",
-      "roll": "user",
-      "id": 4
-    },
-    {
-      "uname": "yash",
-      "email": "yash@gmail.com",
-      "password": "123",
-      "roll": "user",
-      "id": 5
-    },
-    {
       "uname": "yash",
       "email": "yash@gmail.com",
       "password": "123",
@@ -62,6 +41,20 @@
       "password": "123",
       "roll": "user",
       "id": 9
+    },
+    {
+      "uname": "t7",
+      "email": "t7@gmail.com",
+      "password": "111111",
+      "confirmpassword": "111111",
+      "id": 10
+    },
+    {
+      "uname": "t5",
+      "email": "t5@gmail.com",
+      "password": "111111",
+      "confirmpassword": "111111",
+      "id": 11
     }
   ],
   "posts": [

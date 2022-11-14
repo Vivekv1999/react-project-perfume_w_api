@@ -1,15 +1,28 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { LinkContainer } from 'react-router-bootstrap'
 
 
 export default function Navbar() {
-    console.log(localStorage.getItem('user'), "i am navbar");
+
+    const navigate = useNavigate()
+
+    // useEffect(() => {
+    //     if (localStorage.getItem('user')) {
+    //         console.log('ff')
+    //         navigate('/')
+    //     }
+    // },[])
+
 
     const handleLogout = (e) => {
         e.preventDefault()
-        
+
+
         if (localStorage.getItem('user')) {
             localStorage.removeItem('user')
+             navigate('/')
+
         }
         else {
             localStorage.removeItem('admin')
@@ -75,7 +88,6 @@ export default function Navbar() {
                     </div>
                 </div>
             </nav>
-
 
 
         </>
