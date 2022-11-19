@@ -8,7 +8,7 @@ const intialvalues = { uname: "", email: "", password: "", confirmpassword: "" }
 export default function Signup() {
   const nevigate = useNavigate()
 
-  const { values, errors, touched,handleBlur, handleChange, handleSubmit } = useFormik({
+  const { values, errors, touched, handleBlur, handleChange, handleSubmit } = useFormik({
     initialValues: intialvalues,
     validationSchema: signupschema,
     onSubmit: (values) => {
@@ -53,11 +53,11 @@ export default function Signup() {
 
   return (
     <>
-      <div className="container">
-        <div className="screen">
-          <div className="screen__content">
-            <div className="cont1 mx-3 my-3">
-              <form className="loginn" onSubmit={handleSubmit}>
+      <div className="containerrrr">
+        <div className="screennn ">
+          <div className="screennn__content containerrrr">
+            {/* <div className="cont1 mx-3"> */}
+              <form className="loginn " onSubmit={handleSubmit}>
                 <h1>sign up</h1>
                 <div className="login__field">
                   <i className="login__icon fas fa-user" />
@@ -85,14 +85,14 @@ export default function Signup() {
                 </button> */}
                 <input type='submit' className="button login__submit" placeholder='sign up' />
               </form>
-            </div>
+            {/* </div> */}
 
           </div>
-          <div className="screen__background">
-            <span className="screen__background__shape screen__background__shape4" />
-            <span className="screen__background__shape screen__background__shape3" />
-            <span className="screen__background__shape screen__background__shape2" />
-            <span className="screen__background__shape screen__background__shape1" />
+          <div className="screennn__background">
+            <span className="screennn__background__shape screennn__background__shape4" />
+            <span className="screennn__background__shape screennn__background__shape3" />
+            <span className="screennn__background__shape screennn__background__shape2" />
+            <span className="screennn__background__shape screennn__background__shape1" />
           </div>
         </div>
       </div>
@@ -157,9 +157,9 @@ export default function Signup() {
 
 //   return (
 //     <>
-//       <div className="container">
-//         <div className="screen">
-//           <div className="screen__content">
+//       <div className="containerrrr">
+//         <div className="screennn">
+//           <div className="screennn__content">
 //             <div className="cont1 mx-3 my-3">
 //               <form className="loginn" onSubmit={handleSubmit}>
 //                 <h1>sign up</h1>
@@ -192,11 +192,11 @@ export default function Signup() {
 //             </div>
 
 //           </div>
-//           <div className="screen__background">
-//             <span className="screen__background__shape screen__background__shape4" />
-//             <span className="screen__background__shape screen__background__shape3" />
-//             <span className="screen__background__shape screen__background__shape2" />
-//             <span className="screen__background__shape screen__background__shape1" />
+//           <div className="screennn__background">
+//             <span className="screennn__background__shape screennn__background__shape4" />
+//             <span className="screennn__background__shape screennn__background__shape3" />
+//             <span className="screennn__background__shape screennn__background__shape2" />
+//             <span className="screennn__background__shape screennn__background__shape1" />
 //           </div>
 //         </div>
 //       </div>

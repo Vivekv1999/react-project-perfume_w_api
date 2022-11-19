@@ -1,24 +1,24 @@
 /* @import url('https://fonts.googleapis.com/css?family=Raleway:400,700'); */
 
-* {
+/* * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;	
 	font-family: Raleway, sans-serif;
-}
+} */
 
-body {
+/* body {
 	background: linear-gradient(90deg, #C7C5F4, #776BCC);		
-}
+} */
 
-.container {
+.containerrrr {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
 }
 
-.screen {		
+.screennn {		
 	background: linear-gradient(90deg, #5D54A4, #7C78B8);		
 	position: relative;	
 	height: 600px;
@@ -26,13 +26,13 @@ body {
 	box-shadow: 0px 0px 24px #5C5696;
 }
 
-.screen__content {
+.screennn__content {
 	z-index: 1;
 	position: relative;	
 	height: 100%;
 }
 
-.screen__background {		
+.screennn__background {		
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -43,12 +43,12 @@ body {
 	clip-path: inset(0 0 0 0);	
 }
 
-.screen__background__shape {
+.screennn__background__shape {
 	transform: rotate(45deg);
 	position: absolute;
 }
 
-.screen__background__shape1 {
+.screennn__background__shape1 {
 	height: 520px;
 	width: 520px;
 	background: #FFF;	
@@ -57,7 +57,7 @@ body {
 	border-radius: 0 72px 0 0;
 }
 
-.screen__background__shape2 {
+.screennn__background__shape2 {
 	height: 220px;
 	width: 220px;
 	background: #6C63AC;	
@@ -66,7 +66,7 @@ body {
 	border-radius: 32px;
 }
 
-.screen__background__shape3 {
+.screennn__background__shape3 {
 	height: 540px;
 	width: 190px;
 	background: linear-gradient(270deg, #5D54A4, #6A679E);
@@ -75,7 +75,7 @@ body {
 	border-radius: 32px;
 }
 
-.screen__background__shape4 {
+.screennn__background__shape4 {
 	height: 400px;
 	width: 200px;
 	background: #7E7BB9;	

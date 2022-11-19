@@ -1,30 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
-import Navbar from './Component/Navbar';
-import Login_d from './Component/Login_d';
-import Login from './Component/Login';
-// import { BrowserRouter, Routes, Route,Link } from "react-router-dom";
 import {
   BrowserRouter,
   Routes,
   Route,
   Link
 } from "react-router-dom"
+import Login from './Component/Login';
 import Signup from './Component/Signup';
-import Home from './Component/Home';
+// import Home from './Component/Home';
 import Howusecontext from './context/Howusecontext';
+import Navbar1 from './Component/Navbar1';
+import Header_1 from './Component/Header_1';
 import Usertable from './Component/Usertable';
+import Product1 from './Component/Product1';
+import Addtocart from './Component/Addtocart';
 
 function App() {
   return (
 
     <BrowserRouter>
-      <Navbar />
+    <Navbar1 />
       <Routes>
-        <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/singup' element={<Signup />} />
+        <Route path='/signup' element={<Signup />} />
+        <Route path='/' element={<Header_1 />} />
         <Route path='/usertable' element={<Usertable />} />
+        <Route path='/product' element={<Product1 />} />
+        <Route path='/cart' element={<Addtocart />} />
 
         <Route path='/howusecontext' element={<Howusecontext />} />
       </Routes>

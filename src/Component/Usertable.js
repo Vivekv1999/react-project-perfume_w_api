@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 
 export default function Usertable() {
-    const [userrr, setUser] = useState(null)
+    const [userrr, setUser] = useState()
+    const [filterdata, setFilterdata] = useState()
+    const [searchdata, setSearchdata] = useState("")
 
     useEffect(() => {
         getuser()
@@ -18,13 +20,31 @@ export default function Usertable() {
             })
     }
 
+    const onchange = (e) => {
+        setSearchdata(e.target.value.toLowerCase())
+        filter()
+
+    }
+
+    const filter = () => {
+        if (searchdata != " ") {
+            const data = userrr.filter((item) => {
+                return Object.values(item).join(" ").toLowerCase().includes(searchdata)
+            })
+            setFilterdata(data)
+        }
+
+
+    }
+
+
     return (
         <>
-            <div className="container2 col-md-10">
-                <form className="my-5">
-                    <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        
+            <div className='col-md-9' style={{marginTop:"120px",marginLeft:"auto",marginRight:"auto"}}>
+                <form className="my-5 ">
+                    <input className="form-control me-2" type="search" placeholder="Search" onChange={onchange} aria-label="Search" />
                 </form>
-                <div className="container22">
 
                 <table className="table table-bordered">
                     <thead>
@@ -35,21 +55,35 @@ export default function Usertable() {
                         </tr>
                     </thead>
                     <tbody>
-                        {userrr && userrr.map((item) =>
-                            item.id == 1 ? " "
-                            :
-                            
-                            <tr>
-                                    <th scope="row">{item.id}</th>
-                                    <td>{item.uname}</td>
-                                    <td>{item.email}</td>
-                                </tr>
-                        )
+                        {
+                        searchdata.length > 1 ?
+                            (filterdata && filterdata.map((item) =>
+                                item.id === 1 ? 
+                                    " "
+                                    :
+                                    <>
+                                        <tr style={{color:"black"}}>
+                                            <th scope="row" >{item.id}</th>
+                                            <td>{item.uname}</td>
+                                            <td>{item.email}</td>
+                                        </tr>
+                                    </>
+                            ))
+                    
+                        :
+                    ( userrr && userrr.map((item) =>
+                        item.id === 1 ? " "
+                        :
+                        <tr>
+                            <th scope="row">{item.id}</th>
+                            <td>{item.uname}</td>
+                            <td>{item.email}</td>
+                        </tr>
+                        ))
                     }
                     </tbody>
                 </table>
             </div>
-                    </div>
 
 
         </>

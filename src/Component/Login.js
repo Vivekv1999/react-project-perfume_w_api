@@ -22,7 +22,7 @@ export default function Login() {
         dataaa.filter((item) => {
           if (item.email == email) {
             if (item.password === password) {
-              if (item.roll === 1) {
+              if (item.id === 1) {
                 localStorage.setItem("admin", JSON.stringify(item))
                 nevigate("/")
               }
@@ -48,9 +48,9 @@ export default function Login() {
 
   return (
     <div>
-        <div className="container">
-          <div className="screen">
-            <div className="screen__content">
+        <div className="containerrrr">
+          <div className="screennn">
+            <div className="screennn__content">
               <form className="login" onSubmit={handlerlogin}>
                 <div className="login__field">
                   <i className="login__icon fas fa-user" />
@@ -80,11 +80,11 @@ export default function Login() {
                 </div>
               </div>
             </div>
-            <div className="screen__background">
-              <span className="screen__background__shape screen__background__shape4" />
-              <span className="screen__background__shape screen__background__shape3" />
-              <span className="screen__background__shape screen__background__shape2" />
-              <span className="screen__background__shape screen__background__shape1" />
+            <div className="screennn__background">
+              <span className="screennn__background__shape screennn__background__shape4" />
+              <span className="screennn__background__shape screennn__background__shape3" />
+              <span className="screennn__background__shape screennn__background__shape2" />
+              <span className="screennn__background__shape screennn__background__shape1" />
             </div>
           </div>
         </div>
@@ -147,8 +147,8 @@ export default function Login() {
 //   return (
 //     <div>
 //         <div className="container">
-//           <div className="screen">
-//             <div className="screen__content">
+//           <div className="screennn">
+//             <div className="screennn__content">
 //               <form className="login" onSubmit={handlerlogin}>
 //                 <div className="login__field">
 //                   <i className="login__icon fas fa-user" />
@@ -190,11 +190,11 @@ export default function Login() {
 //                 </div>
 //               </div>
 //             </div>
-//             <div className="screen__background">
-//               <span className="screen__background__shape screen__background__shape4" />
-//               <span className="screen__background__shape screen__background__shape3" />
-//               <span className="screen__background__shape screen__background__shape2" />
-//               <span className="screen__background__shape screen__background__shape1" />
+//             <div className="screennn__background">
+//               <span className="screennn__background__shape screennn__background__shape4" />
+//               <span className="screennn__background__shape screennn__background__shape3" />
+//               <span className="screennn__background__shape screennn__background__shape2" />
+//               <span className="screennn__background__shape screennn__background__shape1" />
 //             </div>
 //           </div>
 //         </div>

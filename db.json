@@ -55,6 +55,40 @@
       "password": "111111",
       "confirmpassword": "111111",
       "id": 11
+    },
+    {
+      "uname": "john",
+      "email": "john@gmail.com",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "id": 12
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "image": "http://localhost:4000/profile/profile_1668853455624.png",
+      "title": "Eligant_per",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
+      "price": "50 $"
+    },
+    {
+      "id": 2,
+      "title": "Boss_per",
+      "description": "A amet consectetur adipisicing elit. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
+      "price": "75 $"
+    },
+    {
+      "id": 3,
+      "title": "Veticon_per",
+      "description": "Elit bydh Lorem ipsum dolor sit amet consectetur adipisicing. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
+      "price": "68 $"
+    },
+    {
+      "id": 4,
+      "title": "Thunder_per",
+      "description": "Thunder blanditiis veritatis ipsum dolor sit amet consectetur enim adipisicing elit. Eius quidem soluta animi unde hic reprehenderit eveniet saepe.",
+      "price": "50 $"
     }
   ],
   "posts": [

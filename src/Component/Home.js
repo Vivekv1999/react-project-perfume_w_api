@@ -1,11 +1,14 @@
 import React from 'react'
+import Header_1 from './Header_1'
+import Product from './Product'
 
 export default function Home() {
   console.log('home')
 
   return (
     <div>
-        <h1>homw component</h1>
+        {/* <Product/> */}
+        <Header_1/>
     </div>
   )
 }
