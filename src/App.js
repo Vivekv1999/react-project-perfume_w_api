@@ -14,6 +14,7 @@ import Header_1 from './Component/Header_1';
 import Usertable from './Component/Usertable';
 import Product1 from './Component/Product1';
 import Addtocart from './Component/Addtocart';
+import Singlepage from './Component/Singlepage';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path='/' element={<Header_1 />} />
         <Route path='/usertable' element={<Usertable />} />
         <Route path='/product' element={<Product1 />} />
+        <Route path='/singlepage' element={<Singlepage />} />
         <Route path='/cart' element={<Addtocart />} />
 
         <Route path='/howusecontext' element={<Howusecontext />} />

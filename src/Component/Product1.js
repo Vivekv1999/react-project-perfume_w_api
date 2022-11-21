@@ -41,7 +41,7 @@ export default function Product1() {
                                             </div>
                                             <div className="new-arrival-cart">
                                                 <p>
-                                                    <NavLink to='/' style={{margin:"0px 30px"}}>buy</NavLink>
+                                                    <NavLink to='/cart' style={{margin:"0px 30px"}}>buy</NavLink>
                                                     <span className="lnr lnr-cart" />
                                                     <a href="#">add <span>to </span> cart</a>
                                                 </p>
@@ -59,7 +59,7 @@ export default function Product1() {
                             }
 
 
-                            <div className="col-md-3 col-sm-4">
+                            {/* <div className="col-md-3 col-sm-4">
                                 <div className="single-new-arrival">
                                     <div className="single-new-arrival-bg">
                                         <img src="assets/images/collection/arrivals2.png" alt="new-arrivals images" />
@@ -210,7 +210,7 @@ export default function Product1() {
                                     <h4><a href="#">wooden bed</a></h4>
                                     <p className="arrival-product-price">$140.00</p>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
