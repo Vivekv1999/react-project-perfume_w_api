@@ -1,24 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Link } from 'react-router-dom'
+import Prcontext from '../context/productcontext'
 
 
-
+// const url = "https://fakestoreapi.com/products"
 export default function Product1() {
-    const [product, setproduct] = useState(null)
-
-    useEffect(() => {
-        getproduct()
-    }, [product])
-
-    const getproduct = async () => {
-        let url = "https://fakestoreapi.com/products"
-        let data = await fetch(url);
-        let parsedata = await data.json()
-        setproduct(parsedata)
-        console.log(setproduct(parsedata));
-    }
-
+    const context=useContext(Prcontext)
+    const {productdata}=context;
+    
+    
     return (
         <>
             <section id="new-arrivals" className="new-arrivals">
@@ -28,13 +19,13 @@ export default function Product1() {
                     </div> */}
                     <div className="new-arrivals-content">
                         <div className="row">
-                            {product && product.map((item) => {
+                            {productdata && productdata.map((item) => {
 
 
-                                return <div className="col-md-3 col-sm-4">
+                                return <div className="col-md-3">
                                     <div className="single-new-arrival">
                                         <div className="single-new-arrival-bg">
-                                            <img src="assets/images/collection/arrivals1.png" alt="new-arrivals images" />
+                                            <img src={item.image} alt="new-arrivals images" />
                                             <div className="single-new-arrival-bg-overlay" />
                                             <div className="sale bg-1">
                                                 <p>sale</p>
@@ -52,7 +43,8 @@ export default function Product1() {
                                             </div>
                                         </div>
                                         <h4><a href="#">{item.title}</a></h4>
-                                        <p className="arrival-product-price">$65.00</p>
+                                        <h4><a href="#">{item.id}</a></h4>
+                                        <p className="arrival-product-price">{item.price}</p>
                                     </div>
                                 </div>
                             })
@@ -217,7 +209,7 @@ export default function Product1() {
             </section>
             
             <div style={{textAlign:"auto",width:"15%",margin:"auto"}}>
-                <p className='btnn' style={{ border: "2px solid Green", padding: "5px 5px", display: "flex", alignItems: "center", justifyContent: "center" }}>More Product</p>
+                <p className='btnn' style={{ border: "2px solid Green", padding: "5px 5px", display: "flex", alignItems: "center", justifyContent: "center",cursor:"pointer" }}>More Product</p>
             </div>
         </>
     )

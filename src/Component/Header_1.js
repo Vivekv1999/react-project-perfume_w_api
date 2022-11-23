@@ -26,9 +26,9 @@ export default function Header_1() {
                                                 <div className="single-welcome-hero">
                                                     <div className="welcome-hero-txt">
                                                         <h4>great design collection</h4>
-                                                        <h2>cloth covered accent chair</h2>
+                                                        <h2>Hugo Boss Femme eau DE perfuem for WOMEN </h2>
                                                         <p>
-                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiuiana smod tempor  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                                                            Hugo Boss Femme Edp For Women is casual, sparkling and joyful.  Its opening is composed of tangerine and black currant with a touch of freesiacomposed of white flowers, Madagascar jasmine, lily and rose. The long lasting fragment.
                                                         </p>
                                                         <div className="packages-price">
                                                             <p>
@@ -67,7 +67,7 @@ export default function Header_1() {
                                                 <div className="single-welcome-hero">
                                                     <div className="welcome-hero-txt">
                                                         <h4>great design collection</h4>
-                                                        <h2>mapple wood accent chair</h2>
+                                                        <h2>Aqua Mission Wave Unisex Perfume</h2>
                                                         <p>
                                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiuiana smod tempor  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
                                                         </p>
@@ -108,9 +108,9 @@ export default function Header_1() {
                                                 <div className="single-welcome-hero">
                                                     <div className="welcome-hero-txt">
                                                         <h4>great design collection</h4>
-                                                        <h2>valvet accent arm chair</h2>
+                                                        <h2>Mont Blanc Legend Carolina Herrera For Men</h2>
                                                         <p>
-                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiuiana smod tempor  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                                                            A fresh fougère fragrance with top notes that are lively, bright and clean, heart notes that are magnetic, and dry notes that create an unforgettable signature. laboris nisi ut aliquip.
                                                         </p>
                                                         <div className="packages-price">
                                                             <p>
@@ -152,9 +152,9 @@ export default function Header_1() {
                             <div className="col-md-3">
                                 <div className="single-populer-products">
                                     <div className="single-populer-product-img mt40">
-                                        <img src="assets/images/populer-products/p1.png" alt="populer-products images" />
+                                        <img src="assets/images/populer-products/p1.webp" alt="populer-products images" />
                                     </div>
-                                    <h2><a href="#">arm chair</a></h2>
+                                    <h2><a href="#">Women perfume</a></h2>
                                     <div className="single-populer-products-para">
                                         <p>Nemo enim ipsam voluptatem quia volu ptas sit asperna aut odit aut fugit.</p>
                                     </div>
@@ -166,18 +166,18 @@ export default function Header_1() {
                                         <div className="row">
                                             <div className="col-md-4 col-sm-12">
                                                 <div className="single-inner-populer-product-img">
-                                                    <img src="assets/images/populer-products/p2.png" alt="populer-products images" />
+                                                    <img src="assets/images/populer-products/p2.webp" alt="populer-products images" />
                                                 </div>
                                             </div>
                                             <div className="col-md-8 col-sm-12">
                                                 <div className="single-inner-populer-product-txt">
                                                     <h2>
                                                         <a href="#">
-                                                            latest designed stool <span>and</span> chair
+                                                            Unisex Perfume
                                                         </a>
                                                     </h2>
                                                     <p>
-                                                        Edi ut perspiciatis unde omnis iste natusina error sit voluptatem accusantium doloret mque laudantium, totam rem aperiam.
+                                                        Lattafa Maali Thameen For Men And Women
                                                     </p>
                                                     <div className="populer-products-price">
                                                         <h4>Sales Start from <span>$99.00</span></h4>
@@ -195,11 +195,11 @@ export default function Header_1() {
                                 <div className="single-populer-products">
                                     <div className="single-populer-products">
                                         <div className="single-populer-product-img">
-                                            <img src="assets/images/populer-products/p3.png" alt="populer-products images" />
+                                            <img src="assets/images/populer-products/p3.webp" alt="populer-products images" />
                                         </div>
-                                        <h2><a href="#">hanging lamp</a></h2>
+                                        <h2><a href="#">Mens perfume</a></h2>
                                         <div className="single-populer-products-para">
-                                            <p>Nemo enim ipsam voluptatem quia volu ptas sit asperna aut odit aut fugit.</p>
+                                            <p>Oriflame Sweden Possess Man Eau De Toilette...</p>
                                         </div>
                                     </div>
                                 </div>
@@ -209,9 +209,9 @@ export default function Header_1() {
                 </div>{/*/.container*/}
             </section>
 
- 
+
             {/* <!--new-arrivals start --> */}
-            <Newarrival/>          
+            <Newarrival />
 
 
 
@@ -263,7 +263,7 @@ export default function Header_1() {
                         <div className="row">
                             <div className="col-sm-3">
                                 <div className="single-feature">
-                                    <img src="assets/images/features/f1.jpg" alt="feature image" />
+                                    <img src="assets/images/features/f1.png" alt="feature image" />
                                     <div className="single-feature-txt text-center">
                                         <p>
                                             <i className="fa fa-star" />
@@ -280,7 +280,7 @@ export default function Header_1() {
                             </div>
                             <div className="col-sm-3">
                                 <div className="single-feature">
-                                    <img src="assets/images/features/f2.jpg" alt="feature image" />
+                                    <img src="assets/images/features/f2.webp" alt="feature image" />
                                     <div className="single-feature-txt text-center">
                                         <p>
                                             <i className="fa fa-star" />
@@ -297,7 +297,7 @@ export default function Header_1() {
                             </div>
                             <div className="col-sm-3">
                                 <div className="single-feature">
-                                    <img src="assets/images/features/f3.jpg" alt="feature image" />
+                                    <img src="assets/images/features/f3.webp" alt="feature image" />
                                     <div className="single-feature-txt text-center">
                                         <p>
                                             <i className="fa fa-star" />
@@ -314,7 +314,7 @@ export default function Header_1() {
                             </div>
                             <div className="col-sm-3">
                                 <div className="single-feature">
-                                    <img src="assets/images/features/f4.jpg" alt="feature image" />
+                                    <img src="assets/images/features/f4.png" alt="feature image" />
                                     <div className="single-feature-txt text-center">
                                         <p>
                                             <i className="fa fa-star" />

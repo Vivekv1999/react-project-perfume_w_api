@@ -13,7 +13,6 @@ export default function Navbar1() {
             console.log('cccciiiiiiiiiiii');
             localStorage.removeItem('user')
             nevigate('/')
-
         }
         else {
             localStorage.removeItem('admin')
@@ -25,7 +24,7 @@ export default function Navbar1() {
 
     return (
         <>
-        
+
             <div className="container">
                 <div className="top-area cccc">
                     <div className="header-area">
@@ -49,13 +48,13 @@ export default function Navbar1() {
                                             <div className="attr-nav">
                                                 <ul>
                                                     <li className="search">
-                                                        <a>User</a>
+                                                        <a><button>User</button></a>
                                                     </li>
                                                     {/* <li className="search">
                                                     <a href="#"><span className="lnr lnr-magnifier" /></a>
                                                 </li> */}
                                                     {/* <li className="search">
-                                                    <a href="#"> <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/></a>
+                                                    <a href="#"> <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/></a>
                                                 </li> */}
                                                     <li className="nav-setting">
                                                         <a href="#"><buttonn className='btnnn' onClick={handlelogout}>Logout</buttonn></a>
@@ -108,12 +107,12 @@ export default function Navbar1() {
                                                 <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                                                     <i className="fa fa-bars" />
                                                 </button>
-                                                <a className="navbar-brand" href="index.html">sine<span>mkt</span>.</a>
+                                                <Link className="navbar-brand" to="/">sine<span>mkt</span>.</Link>
                                             </div>
                                             <div className="collapse navbar-collapse menu-ui-design" id="navbar-menu">
                                                 <ul className="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
-                                                    <li className=" scroll active"><a href="#home">home</a></li>
-                                                    <li className="scroll"><a href="#new-arrivals">new arrival</a></li>
+                                                    <li className=" scroll active"><Link to="/">home</Link></li>
+                                                    <li className="scroll"><Link to="/product">new arrival</Link></li>
                                                     <li className="scroll"><a href="#feature">features</a></li>
                                                     <li className="scroll"><a href="#blog">blog</a></li>
                                                     <li className="scroll"><a href="#newsletter">contact</a></li>
@@ -216,8 +215,24 @@ export default function Navbar1() {
                                                 <div className="collapse navbar-collapse menu-ui-design" id="navbar-menu">
                                                     <ul className="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
                                                         <li className=" scroll active"><Link href="/">home</Link></li>
-                                                        <li className="scroll"><a href="#new-arrivals">new arrival</a></li>
-                                                        <li className="scroll"><a href="#feature">features</a></li>
+                                                        <li className="scroll"><Link to="/product">new arrival</Link></li>
+                                                        {/* <li className="scroll"><a href="#feature">features</a></li> */}
+
+
+
+                                                        <li className="scroll"><a href="#feature"><li className="nav-item dropdown">
+                                                            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                Dropdown
+                                                            </a>
+                                                            <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                <li><a  href="">Mens</a></li>
+                                                                <li><a  href="">Women</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        </a></li>
+                                                        
+
+
                                                         <li className="scroll"><a href="#blog">blog</a></li>
                                                         <li className="scroll"><a href="#newsletter">contact</a></li>
                                                     </ul>

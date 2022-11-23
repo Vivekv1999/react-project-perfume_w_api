@@ -1,0 +1,97 @@
+
+    {
+      "id": 13,
+      "image": "assets/images/collection/arrivals13.png",
+      "title": "Eligant_per",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
+      "price": "70 $",
+      "category":"women"
+    },
+    {
+      "id": 14,
+      "image":"assets/images/collection/arrivals14.png",
+      "title": "Boss_per",
+      "description": "A amet consectetur adipisicing elit. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
+      "price": "79 $",
+      "category":"women"
+    },
+    {
+      "id": 15,
+      "image":"assets/images/collection/arrivals15.png",
+      "title": "Veticon_per",
+      "description": "Elit bydh Lorem ipsum dolor sit amet consectetur adipisicing. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
+      "price": "66 $",
+      "category":"women"
+    },
+    {
+      "id": 16,
+      "image":"assets/images/collection/arrivals16.png",
+      "title": "Thunder_per",
+      "description": "Thunder blanditiis veritatis ipsum dolor sit amet consectetur enim adipisicing elit. Eius quidem soluta animi unde hic reprehenderit eveniet saepe.",
+      "price": "86 $",
+      "category":"women"
+    },
+    {
+      "id": 17,
+      "image": "assets/images/collection/arrivals17.png",
+      "title": "Eligant_per",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
+      "price": "49 $",
+      "category":"women"
+    },
+    {
+      "id": 18,
+      "image":"assets/images/collection/arrivals18.png",
+      "title": "Boss_per",
+      "description": "A amet consectetur adipisicing elit. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
+      "price": "75 $",
+      "category":"women"
+    },
+    {
+      "id": 19,
+      "image":"assets/images/collection/arrivals19.png",
+      "title": "Veticon_per",
+      "description": "Elit bydh Lorem ipsum dolor sit amet consectetur adipisicing. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
+      "price": "86 $",
+      "category":"women"
+    },
+    {
+      "id": 20,
+      "image":"assets/images/collection/arrivals20.png",
+      "title": "Thunder_per",
+      "description": "Thunder blanditiis veritatis ipsum dolor sit amet consectetur enim adipisicing elit. Eius quidem soluta animi unde hic reprehenderit eveniet saepe.",
+      "price": "64 $",
+      "category":"women"
+    },
+    {
+      "id": 21,
+      "image": "assets/images/collection/arrivals21.png",
+      "title": "Eligant_per",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
+      "price": "48 $",
+      "category":"women"
+    },
+    {
+      "id": 22,
+      "image":"assets/images/collection/arrivals22.png",
+      "title": "Boss_per",
+      "description": "A amet consectetur adipisicing elit. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
+      "price": "72 $",
+      "category":"women"
+    },
+    {
+      "id": 23,
+      "image":"assets/images/collection/arrivals23.png",
+      "title": "Veticon_per",
+      "description": "Elit bydh Lorem ipsum dolor sit amet consectetur adipisicing. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
+      "price": "89 $",
+      "category":"women"
+    },
+    {
+      "id": 24,
+      "image":"assets/images/collection/arrivals24.png",
+      "title": "Thunder_per",
+      "description": "Thunder blanditiis veritatis ipsum dolor sit amet consectetur enim adipisicing elit. Eius quidem soluta animi unde hic reprehenderit eveniet saepe.",
+      "price": "62 $",
+      "category":"women"
+    }

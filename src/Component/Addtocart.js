@@ -1,4 +1,5 @@
 import React from 'react'
+import { LinkContainer } from 'react-router-bootstrap'
 
 export default function Addtocart() {
   return (
@@ -102,7 +103,9 @@ export default function Addtocart() {
         </div>
       </div>
       <div className="float-right">
+        <LinkContainer to="/product">
         <button type="button" className="btn btn-lg btn-default md-btn-flat mt-2 mr-3">Back to shopping</button>
+        </LinkContainer>
         <button type="button" className="btn btn-lg btn-primary mt-2">Checkout</button>
       </div>
     </div>
