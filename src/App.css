@@ -1,6 +1,14 @@
+.settttt{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+
+}
+
+
 
 /* =================for Login page ========css */
-
 
 .main {
   margin: auto;
@@ -13,11 +21,11 @@
   flex-direction: column;
 }
 
-.log-top{
-  border:1px solid black;
+.log-top {
+  border: 1px solid black;
   background-color: rgb(207, 158, 94);
-  height:42px;
-  width:36px
+  height: 42px;
+  width: 36px
 }
 
 .containerlogin {
@@ -33,7 +41,7 @@
   transition-duration: all 4s ease-in-out;
 }
 
-.containerlogin:hover{
+.containerlogin:hover {
   /* transform: rotate(180deg); */
   /* transform: skew(40deg) */
   border-radius: 50%;
@@ -59,21 +67,24 @@
 }
 
 
-button{
+button {
   border-radius: 12px;
 }
-button:hover{
+
+button:hover {
   transform: scale(1.3);
 }
-.icon:hover{
+
+.icon:hover {
   transform: scale(1.6);
 }
+
 /* .input:hover{
   background-color: lightgreen;
 } */
 
 
-.for-item-center{
+.for-item-center {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,7 +116,7 @@ button:hover{
 height: 50%;
 } */
 
-.screennn{
+.screennn {
   height: 60%;
   margin-top: 80px;
   /* background-color: blue; */
@@ -118,7 +129,7 @@ height: 50%;
   background-color: red;
 } */
 
-  /* body{
+/* body{
     margin-top:20px;
     background:#eee;
   } */
@@ -127,8 +138,8 @@ height: 50%;
   height: auto;
 }
 
-.card{
-  box-shadow: 0 1px 15px 1px rgba(52,40,104,.08);    
+.card {
+  box-shadow: 0 1px 15px 1px rgba(52, 40, 104, .08);
 }
 
 .ui-product-color {
@@ -138,16 +149,22 @@ height: 50%;
   width: .875rem;
   height: .875rem;
   border-radius: 10rem;
-  -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,0.15) inset;
-  box-shadow: 0 0 0 1px rgba(0,0,0,0.15) inset;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset;
   vertical-align: middle;
 }
 
+
+/* //////////////////////// single page css========== */
+.single_page_main{
+  margin-top: "200px";
+}
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

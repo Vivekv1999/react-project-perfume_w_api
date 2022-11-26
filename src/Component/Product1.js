@@ -6,8 +6,9 @@ import Prcontext from '../context/productcontext'
 
 // const url = "https://fakestoreapi.com/products"
 export default function Product1() {
-    const context=useContext(Prcontext)
-    const {productdata}=context;
+    const {product}=useContext(Prcontext)
+    console.log(product);
+    
     
     
     return (
@@ -19,7 +20,7 @@ export default function Product1() {
                     </div> */}
                     <div className="new-arrivals-content">
                         <div className="row">
-                            {productdata && productdata.map((item) => {
+                            {product && product.map((item) => {
 
 
                                 return <div className="col-md-3">
@@ -42,7 +43,8 @@ export default function Product1() {
                                                 </p>
                                             </div>
                                         </div>
-                                        <h4><a href="#">{item.title}</a></h4>
+                                        <h4><Link to={`/single/${item.id}`} >{item.title}</Link></h4>
+                                        
                                         <h4><a href="#">{item.id}</a></h4>
                                         <p className="arrival-product-price">{item.price}</p>
                                     </div>

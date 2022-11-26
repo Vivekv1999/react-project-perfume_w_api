@@ -6,10 +6,13 @@ import { AiFillThunderbolt } from "react-icons/ai"
 import { NavLink } from 'react-router-dom';
 import Itemcontext from '../context/Itemcontext';
 import Prcontext from '../context/productcontext';
+import { LinkContainer } from 'react-router-bootstrap';
 
 
 export default function Newarrival() {
-    const {productdata}=useContext(Prcontext)
+        const {diplayproduct}=useContext(Prcontext)
+        console.log(diplayproduct,"profucyvnnnnnnnnnnn")
+
 // const {productdata}=name
     // const url = "http://localhost:3008/product";
     // const [productdata, setproductdata] = useState([])
@@ -26,29 +29,26 @@ export default function Newarrival() {
     // fetch("http://localhost:3008/product")
     //     .then(res => res.json())
     //     .then((result) => {
-    //         setproductdata(result)
-    //         console.log(productdata);
-    //     })
-    //   }
+        //         setproductdata(result)
+        //         console.log(productdata);
+        //     })
+        //   }
+        
 
-
-    return (
-        <>
+        return (
+            <>
             <section id="new-arrivals" className="new-arrivals">
                 <div className="container">
                     <div className="section-header">
                         <h2>new arrivals</h2>
-                        {/* {console.log(productdata, "lllllllllllllllll")} */}
                     </div>
                     <div className="new-arrivals-content">
                         <div className="row">
-                            <h1>hello</h1>
-                            {/* <h1>{name}</h1> */}
-                            {productdata.map((item) => {
+                            {diplayproduct && diplayproduct.map((item) => {
                                 const titleee = item.title ? item.title.slice(0, 40) : null
-                                return item.id <= 8
-                                    ?
-                                    <div className="col-md-3 col-sm-4">
+                                
+                                //return  item.id <= 8  ?   ===/////usecontex ma educe rvapro jethi aa logic ni jarur nathu have
+                                return      <div className="col-md-3 col-sm-4">
                                         <div className="single-new-arrival">
                                             <div className="single-new-arrival-bg">
                                                 <img src={item.image} alt="new-arrivals images" />
@@ -70,11 +70,11 @@ export default function Newarrival() {
                                                     </p>
                                                 </div>
                                             </div>
-                                            <h4><a href="#">{titleee}...</a></h4>
+                                            <h4 style={{cursor:"pointer"}}><Link to={`/product/${item.id}`} >{titleee}...</Link></h4>
                                             <p className="arrival-product-price">{item.price}</p>
                                         </div>
                                     </div>
-                                    : null
+                                    // : null     ///////////usecontex ma educe rvapro jethi aa logic ni jarur nathu have
                             })}
 
                         </div>

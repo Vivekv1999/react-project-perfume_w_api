@@ -10,7 +10,7 @@ import Itemcontext from './context/Itemcontext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Itemcontext> 
+    <Itemcontext>
     <App />
     </Itemcontext>
   </React.StrictMode>

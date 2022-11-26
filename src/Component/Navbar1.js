@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import { Link, Navigate, useNavigate } from 'react-router-dom'
 
 
@@ -135,17 +136,17 @@ export default function Navbar1() {
                                                     </ul>
                                                 </div>
                                                 <div className="navbar-header">
-                                                    <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                                                    <button type="button" className="navbar-toggle" data-toggle="collapse" data-product="#navbar-menu">
                                                         <i className="fa fa-bars" />
                                                     </button>
-                                                    <a className="navbar-brand" href="index.html">sine<span>mkt</span>.</a>
+                                                    <NavLink className="navbar-brand" to="/">sine<span>mkt</span>.</NavLink>
                                                 </div>
                                                 <div className="collapse navbar-collapse menu-ui-design" id="navbar-menu">
                                                     <ul className="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
-                                                        <li className=" scroll active"><a href="#home">home</a></li>
-                                                        <li className="scroll"><a href="#new-arrivals">new arrival</a></li>
-                                                        <li className="scroll"><a href="#feature">features</a></li>
-                                                        <li className="scroll"><a href="#blog">blog</a></li>
+                                                        <li className=" scroll active"><Link to="/">home</Link></li>
+                                                        <li className="scroll"><Link to="/product">new arrival</Link></li>
+                                                        {/* <li className="scroll"><a href="#feature">features</a></li> */}
+                                                        <li className="scroll"><a href="/adminprdcrud">Product Crud</a></li>
                                                         <li className="scroll"><Link to="/usertable">Crude</Link></li>
                                                     </ul>
                                                 </div>
