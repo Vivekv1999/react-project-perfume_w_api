@@ -6,6 +6,7 @@ import { CiDeliveryTruck } from "react-icons/ci";
 import { TbReplace } from "react-icons/tb";
 import Carttoggle from './Carttoggle';
 import { LinkContainer } from 'react-router-bootstrap';
+import { useCartcontext } from '../context/Cartcontext';
 
 
 const single_api = "http://localhost:3008/product"
@@ -13,7 +14,8 @@ export default function Singleproduct() {
     const { id } = useParams()
     const [product, setproduct] = useState({})
     const [quentity, setquentity] = useState(1)
-    const { price, stock, category, image, title } = product
+    const {cartproduct}=useCartcontext()
+    const { price, stock, category,description, image, title } = product
 
     const setdecrese = () => {
         quentity > 1 ? setquentity(quentity - 1) : setquentity(quentity)
@@ -23,7 +25,6 @@ export default function Singleproduct() {
         quentity < stock ? setquentity(quentity + 1) : setquentity(stock)
     }
 
-    const name = "nil"
     useEffect(() => {
         // fetch(`https://fakestoreapi.com/products/${id}`)
         fetch(`http://localhost:3008/product/${id}`)
@@ -74,7 +75,7 @@ export default function Singleproduct() {
 
                             <Carttoggle quentityy={quentity} setdecrese={setdecrese} setincrese={setincrese} namee="kkk" />
 
-                            <LinkContainer to="/cart">
+                            <LinkContainer to="/cart" onClick={()=>{cartproduct(id, quentity,product )}}>
                                 <div className="cart mt-4 align-items-center" style={{ marginTop: "35px" }} >
                                     <button className="btn btn-danger text-uppercase mr-2 px-4" >Add to cart</button>
                                 </div>
