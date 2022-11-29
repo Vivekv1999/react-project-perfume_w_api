@@ -14,8 +14,8 @@ export default function Singleproduct() {
     const { id } = useParams()
     const [product, setproduct] = useState({})
     const [quentity, setquentity] = useState(1)
-    const {cartproduct}=useCartcontext()
-    const { price, stock, category,description, image, title } = product
+    const { cartproduct } = useCartcontext()
+    const { price, stock, category, description, image, title } = product
 
     const setdecrese = () => {
         quentity > 1 ? setquentity(quentity - 1) : setquentity(quentity)
@@ -73,14 +73,29 @@ export default function Singleproduct() {
                             </div>
                             <hr />
 
-                            <Carttoggle quentityy={quentity} setdecrese={setdecrese} setincrese={setincrese} namee="kkk" />
 
-                            <LinkContainer to="/cart" onClick={()=>{cartproduct(id, quentity,product )}}>
-                                <div className="cart mt-4 align-items-center" style={{ marginTop: "35px" }} >
-                                    <button className="btn btn-danger text-uppercase mr-2 px-4" >Add to cart</button>
-                                </div>
-                            </LinkContainer>
-                            
+                            {localStorage.getItem("user")
+                                ?
+                                <>
+                                    <Carttoggle quentityy={quentity} setdecrese={setdecrese} setincrese={setincrese} namee="kkk" />
+                                    <LinkContainer to="/cart" onClick={() => { cartproduct(id, quentity, product) }}>
+                                        <div className="cart mt-4 align-items-center" style={{ marginTop: "35px" }} >
+                                            <button className="btn btn-danger text-uppercase mr-2 px-4" >Add to cart</button>
+                                        </div>
+                                    </LinkContainer>
+                                </>
+                                : localStorage.getItem("admin") ?
+                                    null :
+                                    <>
+                                        <Carttoggle quentityy={quentity} setdecrese={setdecrese} setincrese={setincrese} namee="kkk" />
+                                        <LinkContainer to="/login" onClick={console.log("login to buy the product")}>
+                                            <div className="cart mt-4 align-items-center" style={{ marginTop: "35px" }} >
+                                                <button className="btn btn-danger text-uppercase mr-2 px-4" >Add to cart</button>
+                                            </div>
+                                        </LinkContainer>
+                                    </>
+                            }
+
                         </div>
                         {/* </div>
                 </div>

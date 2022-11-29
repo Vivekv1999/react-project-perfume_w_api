@@ -56,7 +56,6 @@ export default function Adminprdcrud() {
                             {product && product.map((item) => {
                                 const titleee = item.title ? item.title.slice(0, 40) : null
 
-                                //return  item.id <= 8  ?   ===/////usecontex ma educe rvapro jethi aa logic ni jarur nathu have
                                 return <div className="col-md-3 col-sm-4">
                                     <div className="single-new-arrival">
                                         <div className="single-new-arrival-bg">
@@ -66,12 +65,11 @@ export default function Adminprdcrud() {
                                                 <p onClick={() => { deleteprd(item.id) }} style={{ cursor: "pointer" }}>Remove</p>
                                             </div>
                                         </div>
-                                        {/* <p onClick={() => { updateprd(item.id) }} style={{ cursor: "pointer", border: "2px solid #e99c2e", color: "black" }}>Update Product</p> */}
-                                        <h4 style={{ cursor: "pointer" }}><Link to={`/product/${item.id}`} >{titleee}...</Link></h4>
+                                        <p onClick={() => { updateprd(item.id) }} style={{ cursor: "pointer", border: "2px solid #e99c2e", color: "black" }}>Update Product</p>
+                                        <h4 style={{ cursor: "pointer" }}><Link to={`/single/${item.id}`} >{titleee}...</Link></h4>
                                         <p className="arrival-product-price">{item.price}</p>
                                     </div>
                                 </div>
-                                // : null     ///////////usecontex ma educe rvapro jethi aa logic ni jarur nathu have
                             })}
 
                         </div>

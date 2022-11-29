@@ -3,10 +3,10 @@ import { LinkContainer } from 'react-router-bootstrap'
 import { useCartcontext } from '../context/Cartcontext'
 import { AiFillDelete } from "react-icons/ai";
 import Itemcontext from '../context/Itemcontext';
+import { Link } from 'react-router-dom';
 
 export default function Addtocart() {
-  const { cart,removefromcart } = useCartcontext()
-  console.log(removefromcart, "removeeeeeeeeee");
+  const { cart_amount,cart,removefromcart,clearcart } = useCartcontext()
   // console.log(cart[0].title);
 
 
@@ -62,70 +62,38 @@ export default function Addtocart() {
                       </tr>
                     </>
                   })}
-                  {/* <tr>
-              <td className="p-4">
-                <div className="media align-items-center">
-                  <img src="https://bootdey.com/img/Content/avatar/avatar6.png" className="d-block ui-w-40 ui-bordered mr-4" alt />
-                  <div className="media-body">
-                    <a href="#" className="d-block text-dark">Product 2</a>
-                    <small>
-                      <span className="text-muted">Color:</span>
-                      <span className="ui-product-color ui-product-color-sm align-text-bottom" style={{background: '#000'}} /> &nbsp;
-                      <span className="text-muted">Storage: </span> 32GB &nbsp;
-                      <span className="text-muted">Warranty: </span> Standard - 1 year &nbsp;
-                      <span className="text-muted">Ships from: </span> China
-                    </small>
-                  </div>
-                </div>
-              </td>
-              <td className="text-right font-weight-semibold align-middle p-4">$1049.00</td>
-              <td className="align-middle p-4"><input type="text" className="form-control text-center" defaultValue={1} /></td>
-              <td className="text-right font-weight-semibold align-middle p-4">$1049.00</td>
-              <td className="text-center align-middle px-0"><a href="#" className="shop-tooltip close float-none text-danger" title data-original-title="Remove">×</a></td>
-            </tr>
-            <tr>
-              <td className="p-4">
-                <div className="media align-items-center">
-                  <img src="https://bootdey.com/img/Content/avatar/avatar2.png" className="d-block ui-w-40 ui-bordered mr-4" alt />
-                  <div className="media-body">
-                    <a href="#" className="d-block text-dark">Product 3</a>
-                    <small>
-                      <span className="text-muted">Ships from: </span> Germany
-                    </small>
-                  </div>
-                </div>
-              </td>
-              <td className="text-right font-weight-semibold align-middle p-4">$20.55</td>
-              <td className="align-middle p-4"><input type="text" className="form-control text-center" defaultValue={1} /></td>
-              <td className="text-right font-weight-semibold align-middle p-4">$20.55</td>
-              <td className="text-center align-middle px-0"><a href="#" className="shop-tooltip close float-none text-danger" title data-original-title="Remove">×</a></td>
-            </tr> */}
                 </tbody>
               </table>
             </div>
             {/* / Shopping cart table */}
-            <div className="d-flex flex-wrap justify-content-between align-items-center pb-4">
-              <div className="mt-4">
-                <label className="text-muted font-weight-normal">Promocode</label>
-                <input type="text" placeholder="ABC" className="form-control" />
-              </div>
-              <div className="d-flex">
-                <div className="text-right mt-4 mr-5">
-                  <label className="text-muted font-weight-normal m-0">Discount</label>
-                  <div className="text-large"><strong>$20</strong></div>
-                </div>
-                <div className="text-right mt-4">
-                  <label className="text-muted font-weight-normal m-0">Total price</label>
-                  <div className="text-large"><strong>$1164.65</strong></div>
-                </div>
-              </div>
-            </div>
             <div className="float-right">
               <LinkContainer to="/product">
-                <button type="button" className="btn btn-lg btn-default md-btn-flat mt-2 mr-3">Back to shopping</button>
+                <buttonn className="btn md-btn-flat" ><span style={{marginRight:"20px",fontSize:"18px",color:"#e99c2e"}}>Back to shopping</span></buttonn>
               </LinkContainer>
-              <button type="button" className="btn btn-lg btn-primary mt-2">Checkout</button>
+              <buttonn type="button" className="btn btn-sm btn-danger" onClick={clearcart}>Clear Cart</buttonn>
             </div>
+            <div className="d-flex flex-wrap justify-content-between align-items-center pb-4">  
+           
+                {/* <div className="text-right mt-4 mr-5">
+                    <label className="text-muted font-weight-normal">Discount</label>
+                  <div className="text-large"><strong>$20</strong></div>
+                </div> */}
+                <div className="text-right mt-4">
+                  <label className="text-muted font-weight-normal m-0"><span style={{marginTop:"90px"}}>Total price</span></label>
+                  <div className="text-large"><strong>{cart_amount} $</strong></div>
+                  {console.log(cart_amount,"cart amt")}
+                  
+                  {/* <div className="text-large"><strong>{state.cart_amount}</strong></div> */}
+               
+              </div>
+                  
+             
+              <Link to='/ordercheckout' className="btn btn-success" style={{float:"right",color:"black",marginTop:"15px"}}>Proceeed to pay</Link>
+            
+            </div>
+            <div style={{float:"right"}}>
+            </div>
+            
           </div>
         </div>
       </div>

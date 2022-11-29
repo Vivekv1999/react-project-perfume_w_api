@@ -5,6 +5,7 @@
     "image": "assets/images/collection/arrivals1.png",
     "title": "Laurent Versace Eros pour Homme EDT",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
+    "stock":7,
     "price": "50 $",
     "category":"men"
   },
@@ -14,6 +15,7 @@
     "image":"assets/images/collection/arrivals2.png",
     "title": "Villain Perfume For Men 100 Ml - Eau De Parfum - Premium Long Lasting Fragrance Spray - Woody & Spicy",
     "description": "A amet consectetur adipisicing elit. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
+    "stock":5,
     "price": "75 $",
     "category":"men"
   },
@@ -24,6 +26,7 @@
     "title": "Lacoste L.12.12 Pour Lui Noir EDT 100 ml",
     "description": "Elit bydh Lorem ipsum dolor sit amet consectetur adipisicing. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
     "price": "68 $",
+    "stock":14,
     "category":"men"
   },
   {
@@ -33,6 +36,7 @@
     "title": "Godfather Eau De Parfum Men | Aromatic, Spicy Perfume for Men Long Lasting | Date night fragrance, Body Spray for Men, Ideal gift for men 100ml",
     "description": "Thunder blanditiis veritatis ipsum dolor sit amet consectetur enim adipisicing elit. Eius quidem soluta animi unde hic reprehenderit eveniet saepe.",
     "price": "50 $",
+    "stock":12,
     "category":"men"
   },
   {
@@ -42,6 +46,7 @@
     "title": "Carolina Herrera Bad Boy Eau De Toilette",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
     "price": "50 $",
+    "stock":10,
     "category":"men"
   },
   {
@@ -51,6 +56,7 @@
     "title": "Phy Social Eau de Toilette (EDT) | For that chilled out vibe | Freshness of Mint with citrusy Mandarin | Perfect for a party or evening out",
     "description": "A amet consectetur adipisicing elit. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
     "price": "75 $",
+    "stock":7,
     "category":"men"
   },
   {
@@ -60,6 +66,7 @@
     "title": "Veticon_per",
     "description": "Elit bydh Lorem ipsum dolor sit amet consectetur adipisicing. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
     "price": "68 $",
+    "stock":8,
     "category":"men"
   },
   {
@@ -69,6 +76,7 @@
     "title": "Hugo Boss The Scent Eau De Toilette, 200Ml for Men",
     "description": "Thunder blanditiis veritatis ipsum dolor sit amet consectetur enim adipisicing elit. Eius quidem soluta animi unde hic reprehenderit eveniet saepe.",
     "price": "50 $",
+    "stock":3,
     "category":"men"
   },
   {
@@ -77,6 +85,7 @@
     "title": "Men perfume light edition",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
     "price": "50 $",
+    "stock":41,
     "category":"men"
   },
   {
@@ -85,6 +94,7 @@
     "title": "Oriental Extreme, Men’s Perfume, Long-lasting Perfume, Eau De Parfum, 100ml",
     "description": "A amet consectetur adipisicing elit. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
     "price": "75 $",
+    "stock":42,
     "category":"men"
   },
   {
@@ -93,6 +103,7 @@
     "title": "Arisrocrat Gold Deodorant Body Spray for Men, Fresh, 150 ml",
     "description": "Elit bydh Lorem ipsum dolor sit amet consectetur adipisicing. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
     "price": "68 $",
+    "stock":5,
     "category":"men"
   },
   {
@@ -101,6 +112,7 @@
     "title": "Fogg Impressio Scent, Eau De Parfum, Men’s Perfume, Long-lasting Fresh & Soothing Fragrance, 100ml",
     "description": "Thunder blanditiis veritatis ipsum dolor sit amet consectetur enim adipisicing elit. Eius quidem soluta animi unde hic reprehenderit eveniet saepe.",
     "price": "50 $",
+    "stock":5,
     "category":"men"
   },
   {
@@ -109,6 +121,7 @@
     "title": "Women Fresh Edition monta Parfum 100 ml",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
     "price": "70 $",
+    "stock":15,
     "category":"women"
   },
   {
@@ -116,6 +129,7 @@
     "image":"assets/images/collection/arrivals14.png",
     "title": "Women Dare Niol De Rose 100 ml",
     "description": "A amet consectetur adipisicing elit. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
+    "stock":15,
     "price": "79 $",
     "category":"women"
   },
@@ -125,6 +139,7 @@
     "title": "Women Limited Edition Lush Eau De Parfum 100 ml",
     "description": "Elit bydh Lorem ipsum dolor sit amet consectetur adipisicing. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
     "price": "66 $",
+    "stock":15,
     "category":"women"
   },
   {
@@ -132,6 +147,7 @@
     "image":"assets/images/collection/arrivals16.png",
     "title": "Gucci Women's perfume",
     "description": "Thunder blanditiis veritatis ipsum dolor sit amet consectetur enim adipisicing elit. Eius quidem soluta animi unde hic reprehenderit eveniet saepe.",
+    "stock":15,
     "price": "86 $",
     "category":"women"
   },
@@ -140,6 +156,7 @@
     "image": "assets/images/collection/arrivals17.png",
     "title": "Frengment Edition for fresh perfume",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
+    "stock":15,
     "price": "49 $",
     "category":"women"
   },
@@ -148,6 +165,7 @@
     "image":"assets/images/collection/arrivals18.png",
     "title": "Women My Freedom Eau De Parfum 30 ml",
     "description": "A amet consectetur adipisicing elit. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
+    "stock":15,
     "price": "75 $",
     "category":"women"
   },
@@ -156,6 +174,7 @@
     "image":"assets/images/collection/arrivals19.png",
     "title": "Women Dare Eau De Toilette 100 ml",
     "description": "Elit bydh Lorem ipsum dolor sit amet consectetur adipisicing. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
+    "stock":4,
     "price": "86 $",
     "category":"women"
   },
@@ -164,6 +183,7 @@
     "image":"assets/images/collection/arrivals20.png",
     "title": "Thunder_per",
     "description": "Thunder blanditiis veritatis ipsum dolor sit amet consectetur enim adipisicing elit. Eius quidem soluta animi unde hic reprehenderit eveniet saepe.",
+    "stock":5,
     "price": "64 $",
     "category":"women"
   },
@@ -172,6 +192,7 @@
     "image": "assets/images/collection/arrivals21.png",
     "title": "Eligant_per",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
+    "stock":5,
     "price": "48 $",
     "category":"women"
   },
@@ -180,6 +201,7 @@
     "image":"assets/images/collection/arrivals22.png",
     "title": "LA VIE EST BELLE EAU DE PARFUM",
     "description": "A amet consectetur adipisicing elit. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
+    "stock":5,
     "price": "72 $",
     "category":"women"
   },
@@ -188,6 +210,7 @@
     "image":"assets/images/collection/arrivals23.png",
     "title": "Into the Night Travel Size Fine Fragrance Mist",
     "description": "Elit bydh Lorem ipsum dolor sit amet consectetur adipisicing. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
+    "stock":5,
     "price": "89 $",
     "category":"women"
   },
@@ -196,6 +219,7 @@
     "image":"assets/images/collection/arrivals24.png",
     "title": "United Colors of Benetton Colors Purple Eau de Toilette For Her",
     "description": "Thunder blanditiis veritatis ipsum dolor sit amet consectetur enim adipisicing elit. Eius quidem soluta animi unde hic reprehenderit eveniet saepe.",
+    "stock":5,
     "price": "62 $",
     "category":"women"
   },
@@ -204,6 +228,7 @@
     "image":"assets/images/collection/arrivals25.png",
     "title": "Versace Bright Crystal EDT",
     "description": "Thunder blanditiis veritatis ipsum dolor sit amet consectetur enim adipisicing elit. Eius quidem soluta animi unde hic reprehenderit eveniet saepe.",
+    "stock":5,
     "price": "79 $",
     "category":"women"
   },
@@ -212,6 +237,7 @@
     "image":"assets/images/collection/arrivals26.png",
     "title": "Titan Skinn Nude for Women",
     "description": "Thunder blanditiis veritatis ipsum dolor sit amet consectetur enim adipisicing elit. Eius quidem soluta animi unde hic reprehenderit eveniet saepe.",
+    "stock":5,
     "price": "88 $",
     "category":"women"
   },
@@ -220,6 +246,7 @@
     "image":"assets/images/collection/arrivals27.png",
     "title": "Women Dare Niol De Rose 100 ml",
     "description": "A amet consectetur adipisicing elit. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
+    "stock":5,
     "price": "79 $",
     "category":"women"
   }

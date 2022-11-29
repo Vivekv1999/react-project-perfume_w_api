@@ -36,7 +36,6 @@ export default function Itemcontext(props) {
       dispatch({ type: "api_data", payload: producttt })
     } catch (error) {
       dispatch({ type: "api_errror" })
-
     }
   }
 
@@ -62,7 +61,7 @@ export default function Itemcontext(props) {
       headers: {
         'Content-Type': 'application/json;Charset=UTF-8',
       },
-      body: JSON.stringify({ title, stock, price, description, category, image }),
+      body: JSON.stringify( title, stock, price, description, category, image ),
     })
       .then((res) => res.json())
       .then((data) => {

@@ -5,25 +5,46 @@ import Prcontext from '../context/productcontext'
 export default function Addproduct() {
     const [values, setvalues] = useState({ title: "", stock: "", price: "", description: "", category: "", image: "" })
     const { addproduct } = useContext(Prcontext)
-    const navigate=useNavigate()
+    const navigate = useNavigate()
 
     const onchange = (e) => {
         setvalues({
             ...values, [e.target.name]: e.target.value
         })
     }
+    
+    const { title, stock, price, description, category, image } = values
 
 
     console.log(values);
     const handleaddproduct = () => {
-        addproduct(values.title, values.stock, values.category, values.description, values.image, values.price)
-        setvalues({title:"",stock:"",price:"",description:"",category:"",image:""})
+        addproduct({ title, stock, price, description, category, image })
+        alert("product added sucessfully")
         setTimeout(() => {
-            alert("product added sucessfully")
-        }, 1.5);
-        navigate('/product')
+            console.log('product added sucessfully');
 
+        }, 5);
+        navigate('/product')
     }
+
+    /////////without using context  add product
+    // const addproduct = () => {
+    //     const data = {  title, stock, price, description, category, image  }
+    //     fetch(" http://localhost:3008/product", {
+    //         method: 'POST',
+    //         headers: {
+    //             'Content-Type': 'application/json;Charset=UTF-8',
+    //         },
+    //         body: JSON.stringify(data ),
+    //     })
+    //         .then(res => res.json())
+    //         .then(ddd => {
+    //             console.log('sucess', ddd);
+
+    //         })
+
+    // }
+
 
 
 
@@ -42,15 +63,15 @@ export default function Addproduct() {
                                             </div>
                                             <input type="file" id="" />
                                         </div>
-                                        <p style={{margin:"25px 0px 25px 0px",fontSize:"20px"}}>or</p>
-                                        <label htmlFor="product link" style={{marginRight:"5px",color:"black"}}>Enter Produt Link</label>
-                                        <input type="text" name="image" onChange={onchange} />
-                                     </div>
+                                        <p style={{ margin: "25px 0px 25px 0px", fontSize: "20px" }}>or</p>
+                                        <label htmlFor="product link" style={{ marginRight: "5px", color: "black" }}>Enter Produt Link</label>
+                                        <input type="text" name="image" value={values.image} onChange={onchange} />
+                                    </div>
                                     <div className="col-md-6">
                                         <div className="product p-4">
                                             <div className="d-flex justify-content-between align-items-center" style={{ marginTop: "10px", color: "black" }}>
                                                 <label htmlFor="product title" >product title</label><br />
-                                                <input type="text" name="title" placeholder="Product title" onChange={onchange} />
+                                                <input type="text" name="title" value={title} placeholder="Product title" onChange={onchange} />
                                             </div>
                                             <div className="d-flex justify-content-between align-items-center" style={{ marginTop: "20px", color: "black" }}>
                                                 <label htmlFor="product title">catagoery</label><br />
@@ -64,17 +85,17 @@ export default function Addproduct() {
 
                                             <div className="d-flex justify-content-between align-items-center" style={{ marginTop: "10px", color: "black" }}>
                                                 <label htmlFor="product title">Product price</label><br />
-                                                <input type="text" name="price" id="" onChange={onchange} />
+                                                <input type="text" name="price" value={values.price} onChange={onchange} />
                                             </div>
 
                                             <div className="d-flex justify-content-between align-items-center" style={{ marginTop: "10px", color: "black" }}>
                                                 <label htmlFor="product title">Stock</label><br />
-                                                <input type="text" name="stock" id="" onChange={onchange} /> Units
+                                                <input type="text" name="stock" value={values.stock} onChange={onchange} /> Units
                                             </div>
 
                                             <div className="d-flex justify-content-between align-items-center" style={{ marginTop: "10px", color: "black" }}>
                                                 <label htmlFor="product title">Product Description</label><br />
-                                                <textarea cols={60} rows={4} name="description" onChange={onchange} />
+                                                <textarea cols={60} rows={4} name="description" value={values.description} onChange={onchange} />
                                             </div>
 
                                             <div style={{ backgroundColor: "#e99c2e", cursor: "pointer", color: "black", borderRadius: "10px", width: "100px", padding: "3px" }} onClick={handleaddproduct} >

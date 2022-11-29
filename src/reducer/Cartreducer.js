@@ -22,10 +22,54 @@ export default function Cartreducer(state, action) {
     }
 
     if (action.type === "remove_item") {
-        let updatedcart = state.cart.filter((item) => item.id !== action.payload)        
+        let updatedcart = state.cart.filter((item) => item.id !== action.payload)
         return {
             ...state,
             cart: updatedcart,
+        }
+    }
+
+    if (action.type === "clear_cart") {
+        return {
+            ...state,
+            cart: []
+        }
+    }
+
+    if (action.type === "cart_total_item") {
+        const updateditemval = state.cart.reduce((initalvalll, curElem) => {
+            let { quentity } = curElem
+            initalvalll = initalvalll + quentity
+            return initalvalll;
+        }, 0)
+
+        return {
+            ...state,
+            cart_item: updateditemval
+        }
+    }
+
+    if (action.type === "cart_total_amount") {
+        const cartvalue = state.cart.reduce((intia, curr) => {
+            let { quentity, price } = curr
+
+            intia = intia + price * quentity
+            return intia
+        }, 0)
+
+        return {
+            ...state,
+            cart_amount:cartvalue
+        }
+    }
+
+    ///item purched cart====uper batave te 0 thay mate
+    if(action.type==="cart_item_purchsed"){
+        return{
+            ...state,
+            cart_item:0,
+            cart_amount:0,
+            cart:[]
         }
     }
 

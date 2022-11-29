@@ -1,4 +1,5 @@
 import React from 'react'
+import { LinkContainer } from 'react-router-bootstrap'
 import Newarrival from './Newarrival'
 
 export default function Header_1() {
@@ -36,13 +37,12 @@ export default function Header_1() {
                                                                 <del>$ 499.00</del>
                                                             </p>
                                                         </div>
-                                                        <button className="btn-cart welcome-add-cart" onClick="window.location.href='#'">
+                                                        <LinkContainer to='/product'>
+                                                        <button className="btn-cart welcome-add-cart">
                                                             <span className="lnr lnr-plus-circle" />
-                                                            add <span>to</span> cart
+                                                            More<span> product</span>
                                                         </button>
-                                                        <button className="btn-cart welcome-add-cart welcome-more-info" onClick="window.location.href='#'">
-                                                            more info
-                                                        </button>
+                                                        </LinkContainer>
                                                     </div>{/*/.welcome-hero-txt*/}
                                                 </div>{/*/.single-welcome-hero*/}
                                             </div>{/*/.col*/}
@@ -77,13 +77,13 @@ export default function Header_1() {
                                                                 <del>$ 299.00</del>
                                                             </p>
                                                         </div>
-                                                        <button className="btn-cart welcome-add-cart" onClick="window.location.href='#'">
+                                                        <LinkContainer to='/product'>
+                                                        <button className="btn-cart welcome-add-cart">
                                                             <span className="lnr lnr-plus-circle" />
-                                                            add <span>to</span> cart
+                                                            More<span> product</span>
                                                         </button>
-                                                        <button className="btn-cart welcome-add-cart welcome-more-info" onClick="window.location.href='#'">
-                                                            more info
-                                                        </button>
+                                                        </LinkContainer>
+                                                        
                                                     </div>{/*/.welcome-hero-txt*/}
                                                 </div>{/*/.single-welcome-hero*/}
                                             </div>{/*/.col*/}
@@ -118,13 +118,15 @@ export default function Header_1() {
                                                                 <del>$ 399.00</del>
                                                             </p>
                                                         </div>
-                                                        <button className="btn-cart welcome-add-cart" onClick="window.location.href='#'">
+                                                        <LinkContainer to='/product'>
+                                                        <button className="btn-cart welcome-add-cart" >
                                                             <span className="lnr lnr-plus-circle" />
-                                                            add <span>to</span> cart
+                                                            More<span> product</span> 
                                                         </button>
-                                                        <button className="btn-cart welcome-add-cart welcome-more-info" onClick="window.location.href='#'">
+                                                        </LinkContainer>
+                                                        {/* <button className="btn-cart welcome-add-cart welcome-more-info" onClick="window.location.href='#'">
                                                             more info
-                                                        </button>
+                                                        </button> */}
                                                     </div>{/*/.welcome-hero-txt*/}
                                                 </div>{/*/.single-welcome-hero*/}
                                             </div>{/*/.col*/}

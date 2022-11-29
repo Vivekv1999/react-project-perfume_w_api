@@ -84,24 +84,6 @@
       "category":"men"
     },
     {
-      "id": 16,
-      "image":"assets/images/collection/arrivals16.png",
-      "title": "Gucci Women's perfume",
-      "description": "Thunder blanditiis veritatis ipsum dolor sit amet consectetur enim adipisicing elit. Eius quidem soluta animi unde hic reprehenderit eveniet saepe.",
-      "stock":15,
-      "price": "86",
-      "category":"women"
-    },
-    {
-      "id": 17,
-      "image": "assets/images/collection/arrivals17.png",
-      "title": "Frengment Edition for fresh perfume",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
-      "stock":15,
-      "price": "49",
-      "category":"women"
-    },
-    {
       "id": 2,
       "displayfront":true,
       "image":"assets/images/collection/arrivals2.png",
@@ -130,24 +112,6 @@
       "price": "50 ",
       "stock":12,
       "category":"men"
-    },
-    {
-      "id": 13,
-      "image": "assets/images/collection/arrivals13.png",
-      "title": "Women Fresh Edition monta Parfum 100 ml",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
-      "price": "70",
-      "stock":15,
-      "category":"women"
-    },
-    {
-      "id": 14,
-      "image":"assets/images/collection/arrivals14.png",
-      "title": "Women Dare Niol De Rose 100 ml",
-      "description": "A amet consectetur adipisicing elit. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
-      "stock":15,
-      "price": "79",
-      "category":"women"
     },
     {
       "id": 5,
@@ -208,6 +172,42 @@
       "category":"men"
     },
     {
+      "id": 11,
+      "image":"assets/images/collection/arrivals11.png",
+      "title": "Arisrocrat Gold Deodorant Body Spray for Men, Fresh, 150 ml",
+      "description": "Elit bydh Lorem ipsum dolor sit amet consectetur adipisicing. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
+      "price": "68",
+      "stock":5,
+      "category":"men"
+    },
+    {
+      "id": 12,
+      "image":"assets/images/collection/arrivals12.png",
+      "title": "Fogg Impressio Scent, Eau De Parfum, Men’s Perfume, Long-lasting Fresh & Soothing Fragrance, 100ml",
+      "description": "Thunder blanditiis veritatis ipsum dolor sit amet consectetur enim adipisicing elit. Eius quidem soluta animi unde hic reprehenderit eveniet saepe.",
+      "price": "50 ",
+      "stock":5,
+      "category":"men"
+    },
+    {
+      "id": 13,
+      "image": "assets/images/collection/arrivals13.png",
+      "title": "Women Fresh Edition monta Parfum 100 ml",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
+      "price": "70",
+      "stock":15,
+      "category":"women"
+    },
+    {
+      "id": 14,
+      "image":"assets/images/collection/arrivals14.png",
+      "title": "Women Dare Niol De Rose 100 ml",
+      "description": "A amet consectetur adipisicing elit. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
+      "stock":15,
+      "price": "79",
+      "category":"women"
+    },
+    {
       "id": 15,
       "image":"assets/images/collection/arrivals15.png",
       "title": "Women Limited Edition Lush Eau De Parfum 100 ml",
@@ -215,7 +215,26 @@
       "price": "66",
       "stock":15,
       "category":"women"
-    },{
+    },
+    {
+      "id": 16,
+      "image":"assets/images/collection/arrivals16.png",
+      "title": "Gucci Women's perfume",
+      "description": "Thunder blanditiis veritatis ipsum dolor sit amet consectetur enim adipisicing elit. Eius quidem soluta animi unde hic reprehenderit eveniet saepe.",
+      "stock":15,
+      "price": "86",
+      "category":"women"
+    },
+    {
+      "id": 17,
+      "image": "assets/images/collection/arrivals17.png",
+      "title": "Frengment Edition for fresh perfume",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
+      "stock":15,
+      "price": "49",
+      "category":"women"
+    },
+    {
       "id": 18,
       "image":"assets/images/collection/arrivals18.png",
       "title": "Women My Freedom Eau De Parfum 30 ml",
@@ -304,42 +323,6 @@
       "stock":5,
       "price": "79",
       "category":"women"
-    },
-    {
-      "id": 11,
-      "image":"assets/images/collection/arrivals11.png",
-      "title": "Arisrocrat Gold Deodorant Body Spray for Men, Fresh, 150 ml",
-      "description": "Elit bydh Lorem ipsum dolor sit amet consectetur adipisicing. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
-      "price": "68",
-      "stock":5,
-      "category":"men"
-    },
-    {
-      "id": 12,
-      "image":"assets/images/collection/arrivals12.png",
-      "title": "Fogg Impressio Scent, Eau De Parfum, Men’s Perfume, Long-lasting Fresh & Soothing Fragrance, 100ml",
-      "description": "Thunder blanditiis veritatis ipsum dolor sit amet consectetur enim adipisicing elit. Eius quidem soluta animi unde hic reprehenderit eveniet saepe.",
-      "price": "50 ",
-      "stock":5,
-      "category":"men"
-    },
-    {
-      "id": 28,
-      "image":"assets/images/collection/arrivals27.png",
-      "title": "Unisex Dare Niol De Rose 100 ml",
-      "description": "A amet consectetur adipisicing elit. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
-      "stock":5,
-      "price": "79",
-      "category":"unisex"
-    },
-    {
-      "id": 29,
-      "image":"assets/images/collection/arrivals11.png",
-      "title": "Arisrocrat Gold Deodorant Body Spray for Unisex, Fresh, 150 ml",
-      "description": "Elit bydh Lorem ipsum dolor sit amet consectetur adipisicing. Eius quidem soluta animi unde hic enim blanditiis veritatis reprehenderit eveniet saepe.",
-      "price": "68",
-      "stock":5,
-      "category":"unisex"
     }
   ],
 

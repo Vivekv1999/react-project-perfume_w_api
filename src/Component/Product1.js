@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
+import { LinkContainer } from 'react-router-bootstrap'
 import { NavLink } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import Prcontext from '../context/productcontext'
@@ -33,20 +34,20 @@ export default function Product1() {
                                             </div>
                                             <div className="new-arrival-cart">
                                                 <p>
-                                                    <NavLink to='/cart' style={{margin:"0px 30px"}}>buy</NavLink>
-                                                    <span className="lnr lnr-cart" />
-                                                    <a href="#">add <span>to </span> cart</a>
+                                                    <NavLink to={`/single/${item.id}`} style={{margin:"0px 15px"}}>Buy</NavLink>
+                                                    {/* <span className="lnr lnr-cart" /> */}
+                                                    {/* <a href="#">add <span>to </span> cart</a> */}
                                                 </p>
                                                 <p className="arrival-review pull-right">
                                                     <span className="lnr lnr-heart" />
-                                                    <span className="lnr lnr-frame-expand" />
+                                                    <Link to={`/single/${item.id}`} style={{marginRight:"10px"}}className="lnr lnr-frame-expand" />
                                                 </p>
                                             </div>
                                         </div>
                                         <h4><Link to={`/single/${item.id}`} >{item.title}</Link></h4>
                                         
                                         <h4><a href="#">{item.id}</a></h4>
-                                        <p className="arrival-product-price">{item.price}</p>
+                                        <p className="arrival-product-price">{item.price} $</p>
                                     </div>
                                 </div>
                             })
