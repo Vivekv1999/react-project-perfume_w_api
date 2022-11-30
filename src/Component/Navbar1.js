@@ -108,7 +108,7 @@ export default function Navbar1(props) {
                                                 <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                                                     <i className="fa fa-bars" />
                                                 </button>
-                                                <Link className="navbar-brand" to="/">sine<span>mkt</span>.</Link>
+                                                <Link className="navbar-brand" to="/">Scent<span>store</span>.</Link>
                                             </div>
                                             <div className="collapse navbar-collapse menu-ui-design" id="navbar-menu">
                                                 <ul className="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
@@ -125,6 +125,7 @@ export default function Navbar1(props) {
                                                                         props.name(category_define)
                                                                         console.log(category_define, "in navbarrrr");
                                                                     }}>Mens</Link></li>
+
                                                                     <li><Link to="/category/women" onClick={() => {
                                                                         props.name(category_define2)
                                                                     }}>Women</Link></li>
@@ -137,7 +138,7 @@ export default function Navbar1(props) {
                                                     </li>
                                                     {/* <li className="scroll"><a href="#feature">features</a></li> */}
                                                     {/* <li className="scroll"><a href="#blog">blog</a></li> */}
-                                                    <li className="scroll"><a href="#newsletter">contact</a></li>
+                                                    <li className="scroll"><Link to="/about">About</Link></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -160,7 +161,7 @@ export default function Navbar1(props) {
                                                     <button type="button" className="navbar-toggle" data-toggle="collapse" data-product="#navbar-menu">
                                                         <i className="fa fa-bars" />
                                                     </button>
-                                                    <NavLink className="navbar-brand" to="/">sine<span>mkt</span>.</NavLink>
+                                                    <NavLink className="navbar-brand" to="/">Scent<span>store</span>.</NavLink>
                                                 </div>
                                                 <div className="collapse navbar-collapse menu-ui-design" id="navbar-menu">
                                                     <ul className="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
@@ -189,42 +190,6 @@ export default function Navbar1(props) {
                                                                 <span className="lnr lnr-cart" />
                                                                 <span className="badge badge-bg-1">{0}</span>
                                                             </Link>
-                                                            {/* <ul className="dropdown-menu cart-list s-cate">
-                                                                <li className="single-cart-list">
-                                                                    <a href="#" className="photo"><img src="assets/images/collection/arrivals1.png" className="cart-thumb" alt="image" /></a>
-                                                                    <div className="cart-list-txt">
-                                                                        <h6><a href="#">arm <br /> chair</a></h6>
-                                                                        <p>1 x - <span className="price">$180.00</span></p>
-                                                                    </div>
-                                                                    <div className="cart-close">
-                                                                        <span className="lnr lnr-cross" />
-                                                                    </div>
-                                                                </li>
-                                                                <li className="single-cart-list">
-                                                                    <a href="#" className="photo"><img src="assets/images/collection/arrivals2.png" className="cart-thumb" alt="image" /></a>
-                                                                    <div className="cart-list-txt">
-                                                                        <h6><a href="#">single <br /> armchair</a></h6>
-                                                                        <p>1 x - <span className="price">$180.00</span></p>
-                                                                    </div>
-                                                                    <div className="cart-close">
-                                                                        <span className="lnr lnr-cross" />
-                                                                    </div>
-                                                                </li>
-                                                                <li className="single-cart-list">
-                                                                    <a href="#" className="photo"><img src="assets/images/collection/arrivals3.png" className="cart-thumb" alt="image" /></a>
-                                                                    <div className="cart-list-txt">
-                                                                        <h6><a href="#">wooden arn <br /> chair</a></h6>
-                                                                        <p>1 x - <span className="price">$180.00</span></p>
-                                                                    </div>
-                                                                    <div className="cart-close">
-                                                                        <span className="lnr lnr-cross" />
-                                                                    </div>
-                                                                </li>
-                                                                <li className="total">
-                                                                    <span>Total: $0.00</span>
-                                                                    <button className="btn-cart pull-right" onClick="window.location.href='#'">view cart</button>
-                                                                </li>
-                                                            </ul> */}
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -232,7 +197,7 @@ export default function Navbar1(props) {
                                                     <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                                                         <i className="fa fa-bars" />
                                                     </button>
-                                                    <Link className="navbar-brand" to="/">sine<span>mkt</span>.</Link>
+                                                    <Link className="navbar-brand" to="/">Scent<span>store</span>.</Link>
                                                 </div>
                                                 <div className="collapse navbar-collapse menu-ui-design" id="navbar-menu">
                                                     <ul className="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
@@ -240,15 +205,22 @@ export default function Navbar1(props) {
                                                         <li className="scroll"><Link to="/product">new arrival</Link></li>
                                                         {/* <li className="scroll"><a href="#feature">features</a></li> */}
 
-
-
                                                         <li className="scroll"><a href="#feature"><li className="nav-item dropdown">
-                                                            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                                 category
                                                             </a>
                                                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                                <li><a href="">Mens</a></li>
-                                                                <li><a href="">Women</a></li>
+                                                                <li><Link to="/category/men" onClick={() => {
+                                                                        props.name(category_define)
+                                                                        console.log(category_define, "in navbarrrr");
+                                                                    }}>Mens</Link></li>
+
+                                                                <li><Link to="/category/women" onClick={() => {
+                                                                        props.name(category_define2)
+                                                                    }}>Women</Link></li>
+                                                                <li><Link to="/category/unisex" onClick={() => {
+                                                                        props.name(category_define3)
+                                                                    }}>Unisex</Link></li>
                                                             </ul>
                                                         </li>
                                                         </a>
@@ -256,7 +228,7 @@ export default function Navbar1(props) {
 
 
 
-                                                        <li className="scroll"><a href="#newsletter">contact</a></li>
+                                                        <li className="scroll"><Link to="/about">About</Link></li>
                                                     </ul>
                                                 </div>
                                             </div>

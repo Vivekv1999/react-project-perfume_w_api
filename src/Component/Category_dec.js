@@ -8,6 +8,9 @@ export default function Category_dec(props) {
     // const {category}=useParams()
     const [categortprd, setCategortprd] = useState([])
 
+    console.log(props.name);
+    
+
     // useEffect(()=>{
     //     fetch(`http://localhost:3008/product/${category}`)
     //     .then(res=> res.json())

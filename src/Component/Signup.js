@@ -57,7 +57,7 @@ export default function Signup() {
         <div className="screennn ">
           <div className="screennn__content containerrrr">
             {/* <div className="cont1 mx-3"> */}
-              <form className="loginn " onSubmit={handleSubmit}>
+              <form className="loginn" onSubmit={handleSubmit} style={{color:"black"}}>
                 <h1>sign up</h1>
                 <div className="login__field">
                   <i className="login__icon fas fa-user" />

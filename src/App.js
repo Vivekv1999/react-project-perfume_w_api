@@ -21,14 +21,15 @@ import Thankspage from './Component/Thankspage';
 import Oredrecheckout from './Component/Oredrecheckout';
 import Category_dec from './Component/Category_dec';
 import { useState } from 'react';
+import About from './Component/About';
 
 
 function App() {
   const [cate, setcate] = useState()
 
-  const category = (category_define) => {  ///at here data==(perametr 3 ney mate same chale 
+  const category = (aaa) => {  ///at here data==(perametr 3 ney mate same chale 
                                           //////kem ke te to navbar mathio j ley 6 atle
-    setcate(category_define)    
+    setcate(aaa)    
   }
   
   return (
@@ -40,6 +41,7 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
         <Route path='/' element={<Header_1 />} />
+        <Route path='/about' element={<About />} />
         <Route path='/usertable' element={<Usertable />} />
         <Route path='/product' element={<Product1 />} />
         <Route path='/category/men' element={<Category_dec name={cate} />} />
@@ -47,6 +49,7 @@ function App() {
         <Route path='/category/unisex' element={<Category_dec name={cate} />} />
         <Route path='/adminprdcrud' element={<Adminprdcrud />} />
         <Route path='/addproduct' element={<Addproduct />} />
+        <Route path='/addproduct/:id' element={<Addproduct />} />
         <Route path='/single/:id' element={<Singleproduct />} />
         <Route path='/cart' element={<Addtocart />} />
         <Route path='/ordercheckout' element={<Oredrecheckout />} />

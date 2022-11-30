@@ -48,10 +48,10 @@ export default function Login() {
 
   return (
     <div>
-        <div className="containerrrr">
+        <div className="containerrrr" >
           <div className="screennn">
             <div className="screennn__content">
-              <form className="login" onSubmit={handlerlogin}>
+              <form className="login" onSubmit={handlerlogin} style={{color:"black"}}>
                 <div className="login__field">
                   <i className="login__icon fas fa-user" />
                   <input type="text" className="login__input" name="email" onChange={(e)=>{setEmail(e.target.value)

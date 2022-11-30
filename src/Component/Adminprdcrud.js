@@ -5,7 +5,7 @@ import { Link, useParams } from 'react-router-dom'
 import Prcontext from '../context/productcontext'
 
 export default function Adminprdcrud() {
-    const { product, getproduct, updateprd } = useContext(Prcontext)
+    const { product, getproduct } = useContext(Prcontext)
     const { id } = useParams()
 
     useEffect(() => {
@@ -65,7 +65,8 @@ export default function Adminprdcrud() {
                                                 <p onClick={() => { deleteprd(item.id) }} style={{ cursor: "pointer" }}>Remove</p>
                                             </div>
                                         </div>
-                                        <p onClick={() => { updateprd(item.id) }} style={{ cursor: "pointer", border: "2px solid #e99c2e", color: "black" }}>Update Product</p>
+
+                                        <Link to={`/addproduct/${item.id}`} style={{ cursor: "pointer", border: "2px solid #e99c2e", color: "black", width: "135px" }}>Update Product</Link>
                                         <h4 style={{ cursor: "pointer" }}><Link to={`/single/${item.id}`} >{titleee}...</Link></h4>
                                         <p className="arrival-product-price">{item.price}</p>
                                     </div>
