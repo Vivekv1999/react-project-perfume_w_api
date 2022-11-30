@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function Footer() {
   return (
     <>
-
+    
        {/* <!--newsletter strat --> */}
        <section id="newsletter" className="newsletter">
                 <div className="container">

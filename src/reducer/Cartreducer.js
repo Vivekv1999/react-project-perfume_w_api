@@ -3,7 +3,7 @@ import React from 'react'
 export default function Cartreducer(state, action) {
     if (action.type === "add_to_cart") {
         const { id, quentity, product } = action.payload
-        // console.log(action.payload);
+      // console.log(action.payload);
 
         const cartproduct = {
             id,                            ///jo color hot to id=id+coclor levupad kem id agaga creta karava mate
@@ -69,7 +69,7 @@ export default function Cartreducer(state, action) {
             ...state,
             cart_item:0,
             cart_amount:0,
-            cart:[]
+            cart:[   ]
         }
     }
 

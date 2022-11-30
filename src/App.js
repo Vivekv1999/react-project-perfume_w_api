@@ -22,6 +22,7 @@ import Oredrecheckout from './Component/Oredrecheckout';
 import Category_dec from './Component/Category_dec';
 import { useState } from 'react';
 import About from './Component/About';
+import Protectedsite from './Component/Protectedsite';
 
 
 function App() {
@@ -51,9 +52,9 @@ function App() {
         <Route path='/addproduct' element={<Addproduct />} />
         <Route path='/addproduct/:id' element={<Addproduct />} />
         <Route path='/single/:id' element={<Singleproduct />} />
-        <Route path='/cart' element={<Addtocart />} />
-        <Route path='/ordercheckout' element={<Oredrecheckout />} />
-        <Route path='/thankspage' element={<Thankspage />} />
+        <Route path='/cart' element={<Protectedsite  Component={Addtocart} />} />
+        <Route path='/ordercheckout' element={<Protectedsite Component={Oredrecheckout} />} />
+        <Route path='/thankspage' element={<Protectedsite Component={Thankspage} />} />
 
         <Route path='/howusecontext' element={<Howusecontext />} />
       </Routes>

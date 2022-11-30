@@ -7,7 +7,7 @@ const Cartcontext = createContext()
 const getcartdata = () => {
     const localstoragedataaa = localStorage.getItem("cartdataa")
     if (localstoragedataaa === []) {
-    // if (localstoragedataaa.length === 0) {
+        // if (localstoragedataaa.length === 0) {
         return []
     }
     else {
@@ -37,28 +37,28 @@ export default function Cartprovider({ children }) {
 
     }
     ///to claer the cart
-    const clearcart=()=>{
-        dispatch({type:"clear_cart"})
+    const clearcart = () => {
+        dispatch({ type: "clear_cart" })
     }
 
     /////if item is purched then last page cart===0
-    const itempurchased=()=>{
-dispatch({type:"cart_item_purchsed"})
+    const itempurchased = () => {
+        dispatch({ type: "cart_item_purchsed" })
     }
 
     //////to ad data in localStorage
     ////get set
     ///dispatch--------useefetct ma karu kem ke-----item cartma 6 te item count karelu te batavava0--navbar ma 
-        useEffect(() => {
-        dispatch({type:"cart_total_item"})
-        dispatch({type:"cart_total_amount"})
+    useEffect(() => {
+        dispatch({ type: "cart_total_item" })
+        dispatch({ type: "cart_total_amount" })
         localStorage.setItem('cartdataa', JSON.stringify(state.cart))  //at here cart ma data 6 te array na form ma 6
-                                                                      //parntu local storage ma data string ma form ma j accept kare mate.......JSON.strigify karvu pade
+        //parntu local storage ma data string ma form ma j accept kare mate.......JSON.strigify karvu pade
     }, [state.cart])
 
 
     return (
-        <Cartcontext.Provider value={{ ...state, cartproduct, removefromcart,clearcart,itempurchased }}>
+        <Cartcontext.Provider value={{ ...state, cartproduct, removefromcart, clearcart, itempurchased }}>
             {children}
         </Cartcontext.Provider>
     )
