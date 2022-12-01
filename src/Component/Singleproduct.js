@@ -60,7 +60,7 @@ export default function Singleproduct() {
                                 <span className="text-uppercase text-muted brand">{product.category}</span>
                                 <h5 className="text-uppercase" style={{ marginTop: "10px" }}>{title}</h5>
                                 <div className="price d-flex flex-row align-items-center">
-                                    <div className="ml-2" style={{ marginTop: "15px", color: "black" }}> <small className="dis-price">{product.price}</small>
+                                    <div className="ml-2" style={{ marginTop: "15px", color: "black" }}> <small className="dis-price">{product.price} $</small>
                                     </div>
                                 </div>
                             </div>

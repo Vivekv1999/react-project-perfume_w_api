@@ -7,13 +7,16 @@ import { NavLink } from 'react-router-dom';
 import Itemcontext from '../context/Itemcontext';
 import Prcontext from '../context/productcontext';
 import { LinkContainer } from 'react-router-bootstrap';
+import { useCartcontext } from '../context/Cartcontext';
 
 
 export default function Newarrival() {
-        const {diplayproduct}=useContext(Prcontext)
-        console.log(diplayproduct,"profucyvnnnnnnnnnnn")
+    const quentity = 1
+    const { diplayproduct } = useContext(Prcontext)
+    console.log(diplayproduct, "profucyvnnnnnnnnnnn")
+    const { cartproduct } = useCartcontext()
 
-// const {productdata}=name
+    // const {productdata}=name
     // const url = "http://localhost:3008/product";
     // const [productdata, setproductdata] = useState([])
     // useEffect(() => {
@@ -29,14 +32,14 @@ export default function Newarrival() {
     // fetch("http://localhost:3008/product")
     //     .then(res => res.json())
     //     .then((result) => {
-        //         setproductdata(result)
-        //         console.log(productdata);
-        //     })
-        //   }
-        
+    //         setproductdata(result)
+    //         console.log(productdata);
+    //     })
+    //   }
 
-        return (
-            <>
+
+    return (
+        <>
             <section id="new-arrivals" className="new-arrivals">
                 <div className="container">
                     <div className="section-header">
@@ -46,35 +49,37 @@ export default function Newarrival() {
                         <div className="row">
                             {diplayproduct && diplayproduct.map((item) => {
                                 const titleee = item.title ? item.title.slice(0, 40) : null
-                                
+                                const product = item.id ? item :null
                                 //return  item.id <= 8  ?   ===/////usecontex ma educe rvapro jethi aa logic ni jarur nathu have
-                                return      <div className="col-md-3 col-sm-4">
-                                        <div className="single-new-arrival">
-                                            <div className="single-new-arrival-bg">
-                                                <img src={item.image} alt="new-arrivals images" />
-                                                <div className="single-new-arrival-bg-overlay" />
-                                                <div className="sale bg-1">
-                                                    <p>sale</p>
-                                                </div>
-                                                <div className="new-arrival-cart">
-                                                    <p>
-                                                        <span className="lnr lnr-cart" />
-                                                        <p to='/cart' style={{ margin: "0px 30px" }}><AiFillThunderbolt />buy</p>
-
-                                                        <span className="lnr lnr-cart" />
-                                                        <a href="#">add <span>to </span> cart</a>
-                                                    </p>
-                                                    <p className="arrival-review pull-right">
-                                                        <span className="lnr lnr-heart" />
-                                                        <span className="lnr lnr-frame-expand" />
-                                                    </p>
-                                                </div>
+                                return <div className="col-md-3 col-sm-4">
+                                    <div className="single-new-arrival">
+                                        <div className="single-new-arrival-bg">
+                                            <img src={item.image} alt="new-arrivals images" />
+                                            <div className="single-new-arrival-bg-overlay" />
+                                            <div className="sale bg-1">
+                                                <p>sale</p>
                                             </div>
-                                            <h4 style={{cursor:"pointer"}}><Link to={`/product/${item.id}`} >{titleee}...</Link></h4>
-                                            <p className="arrival-product-price">{item.price}</p>
+                                            <div className="new-arrival-cart">
+                                                <p>
+                                                    <Link to='/cart' onClick={() => {cartproduct(item.id, quentity, product)
+                                                        console.log(item.id, quentity,product,"kkkkkkkkkkkkkkkkkkkkkkkkkkk");
+                                                    }} style={{ margin: "0px 30px" }}><AiFillThunderbolt />buy</Link>
+
+
+                                                    <span className="lnr lnr-cart" />
+                                                    <Link to="/cart" onClick={() => {cartproduct(item.id, quentity, product)}}>add <span>to </span> cart</Link>
+                                                </p>
+                                                <p className="arrival-review pull-right">
+                                                    <span className="lnr lnr-heart" />
+                                                    <span className="lnr lnr-frame-expand" />
+                                                </p>
+                                            </div>
                                         </div>
+                                        <h4 style={{ cursor: "pointer" }}><Link to={`/single/${item.id}`} >{titleee}...</Link></h4>
+                                        <p className="arrival-product-price">{item.price} $</p>
                                     </div>
-                                    // : null     ///////////usecontex ma educe rvapro jethi aa logic ni jarur nathu have
+                                </div>
+                                // : null     ///////////usecontex ma educe rvapro jethi aa logic ni jarur nathu have
                             })}
 
                         </div>

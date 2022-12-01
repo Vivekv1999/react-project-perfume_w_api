@@ -2,11 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Footer() {
-  return (
-    <>
-    
-       {/* <!--newsletter strat --> */}
-       <section id="newsletter" className="newsletter">
+    return (
+        <>
+
+            {/* <!--newsletter strat --> */}
+            <section id="newsletter" className="newsletter">
                 <div className="container">
                     <div className="hm-footer-details">
                         <div className="row">
@@ -19,7 +19,7 @@ export default function Footer() {
                                         <ul>
                                             <li><Link to="/about">about us</Link></li>{/*/li*/}
                                             <li><Link >contact us</Link></li>{/*/li*/}
-                                         
+
                                             <li><Link to="/">store</Link></li>{/*/li*/}
                                         </ul>{/*/ul*/}
                                     </div>{/*/.hm-foot-menu*/}
@@ -32,10 +32,10 @@ export default function Footer() {
                                     </div>{/*/.hm-foot-title*/}
                                     <div className="hm-foot-menu">
                                         <ul>
-                                            <li><Link to="">Mens Perfume</Link></li>{/*/li*/}
-                                            <li><Link>Women Perfume</Link></li>{/*/li*/}
+                                            <li><Link >Mens Perfume</Link></li>{/*/li*/}
+                                            <li><Link >Women Perfume</Link></li>{/*/li*/}
                                             <li><Link >Unisex Perfume</Link></li>{/*/li*/}
-                                            
+
                                         </ul>{/*/ul*/}
                                     </div>{/*/.hm-foot-menu*/}
                                 </div>{/*/.hm-footer-widget*/}
@@ -82,8 +82,8 @@ export default function Footer() {
             </section>
 
             {/* <!--footer start--> */}
-            
-     <footer id="footer" className="footer">
+
+            <footer id="footer" className="footer">
                 <div className="container">
                     <div className="hm-footer-copyright text-center">
                         <div className="footer-social">
@@ -105,7 +105,7 @@ export default function Footer() {
                 </div>{/*/.scroll-Top*/}
             </footer>
 
-      
-    </>
-  )
+
+        </>
+    )
 }

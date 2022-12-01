@@ -19,7 +19,7 @@ export default function Signup() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify( values ),
+        body: JSON.stringify(values),
       })
         .then((response) => response.json())
         .then((result) => {
@@ -57,34 +57,31 @@ export default function Signup() {
         <div className="screennn ">
           <div className="screennn__content containerrrr">
             {/* <div className="cont1 mx-3"> */}
-              <form className="loginn" onSubmit={handleSubmit} style={{color:"black"}}>
-                <h1>sign up</h1>
-                <div className="login__field">
-                  <i className="login__icon fas fa-user" />
-                  <input type="text" className="login__input" name="uname" value={values.uname} onChange={handleChange}  onBlur={handleBlur} placeholder="User name" /><br />
-                  {errors.uname && touched.uname ? (<span style={{ color: 'red' }}> {errors.uname}</span>) : null}
-                </div>
-                <div className="login__field">
-                  <i class="login__icon fa-solid fa-envelope"></i>
-                  <input type="text" className="login__input" name="email" value={values.email} onChange={handleChange} onBlur={handleBlur} placeholder="Email" /><br />
-                  {errors.email && touched.email ? (<span style={{ color: 'red' }}> {errors.email}</span> ): null}
-                </div>
-                <div className="login__field">
-                  <i className="login__icon fas fa-lock" />
-                  <input type="password" className="login__input" name="password" value={values.password} onChange={handleChange}  onBlur={handleBlur} placeholder="Password" /><br />
-                  {errors.password && touched.password ? (<span style={{ color: 'red' }}> {errors.password}</span>) : null}
-                </div>
-                <div className="login__field">
-                  <i className="login__icon fas fa-lock" />
-                  <input type="password" className="login__input" placeholder='cpassword' name="confirmpassword" value={values.confirmpassword} onBlur={handleBlur} onChange={handleChange} /><br />
-                  {errors.confirmpassword && touched.confirmpassword ? (<span style={{ color: 'red' }}> {errors.confirmpassword}</span>) : null}
-                </div>
-                {/* <button className="button login__submit">
-                  <span className="button__text">Sign up</span>
-                  <i className="button__icon fas fa-chevron-right" />
-                </button> */}
-                <input type='submit' className="button login__submit" placeholder='sign up' />
-              </form>
+            <form className="loginn" onSubmit={handleSubmit} style={{ color: "black" }}>
+              <h1>sign up</h1>
+              <div className="login__field">
+                <i className="login__icon fas fa-user" />
+                <input type="text" className="login__input" name="uname" value={values.uname} onChange={handleChange} onBlur={handleBlur} placeholder="User name" /><br />
+                {errors.uname && touched.uname ? (<span style={{ color: 'red' }}> {errors.uname}</span>) : null}
+              </div>
+              <div className="login__field">
+                <i class="login__icon fa-solid fa-envelope"></i>
+                <input type="text" className="login__input" name="email" value={values.email} onChange={handleChange} onBlur={handleBlur} placeholder="Email" /><br />
+                {errors.email && touched.email ? (<span style={{ color: 'red' }}> {errors.email}</span>) : null}
+              </div>
+              <div className="login__field">
+                <i className="login__icon fas fa-lock" />
+                <input type="password" className="login__input" name="password" value={values.password} onChange={handleChange} onBlur={handleBlur} placeholder="Password" /><br />
+                {errors.password && touched.password ? (<span style={{ color: 'red' }}> {errors.password}</span>) : null}
+              </div>
+              <div className="login__field">
+                <i className="login__icon fas fa-lock" />
+                <input type="password" className="login__input" placeholder='cpassword' name="confirmpassword" value={values.confirmpassword} onBlur={handleBlur} onChange={handleChange} /><br />
+                {errors.confirmpassword && touched.confirmpassword ? (<span style={{ color: 'red' }}> {errors.confirmpassword}</span>) : null}
+              </div>
+
+              <input type='submit' className="button login__submit" placeholder='sign up' />
+            </form>
             {/* </div> */}
 
           </div>

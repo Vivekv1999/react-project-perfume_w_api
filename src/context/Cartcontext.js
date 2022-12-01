@@ -22,7 +22,6 @@ const initialstate = {
     cart_amount: "",
 }
 
-
 export default function Cartprovider({ children }) {
     const [state, dispatch] = useReducer(reducer, initialstate)
 

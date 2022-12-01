@@ -10,7 +10,10 @@ export default function Protectedsite(props) {
         if (!loginn) {
             navigate('/login ')
         }
+         
     })
+
+
     return (
         <>
             <Component />

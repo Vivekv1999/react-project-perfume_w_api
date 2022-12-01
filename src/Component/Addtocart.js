@@ -42,7 +42,7 @@ export default function Addtocart() {
                           <div className="media align-items-center">
                             <img src={item.image} className="d-block ui-w-40 ui-bordered mr-4" alt />
                             <div className="media-body">
-                              <a href="#" className="d-block text-dark">{item.title}</a>
+                              <Link to={`/single/${item.id}`} className="d-block text-dark">{item.title}</Link>
                               <small>
                                 {/* <span className="text-muted">{item.category}</span> */}
                                 <span className="ui-product-color ui-product-color-sm align-text-bottom" style={{ background: '#e81e2c', marginLeft: "15px" }} /> &nbsp;

@@ -76,6 +76,20 @@
       "password": "aaa111",
       "confirmpassword": "aaa111",
       "id": 14
+    },
+    {
+      "uname": "manshi",
+      "email": "mm@gmail.com",
+      "password": "AAAAAA",
+      "confirmpassword": "AAAAAA",
+      "id": 15
+    },
+    {
+      "uname": "manshi",
+      "email": "mm@gmail.com",
+      "password": "AAAAAA",
+      "confirmpassword": "AAAAAA",
+      "id": 16
     }
   ],
   "product": [

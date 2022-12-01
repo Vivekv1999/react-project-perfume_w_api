@@ -48,9 +48,9 @@ function App() {
         <Route path='/category/men' element={<Category_dec name={cate} />} />
         <Route path='/category/women' element={<Category_dec name={cate} />} />
         <Route path='/category/unisex' element={<Category_dec name={cate} />} />
-        <Route path='/adminprdcrud' element={<Adminprdcrud />} />
-        <Route path='/addproduct' element={<Addproduct />} />
-        <Route path='/addproduct/:id' element={<Addproduct />} />
+        <Route path='/adminprdcrud' element={<Protectedsite Component={Adminprdcrud} />} />
+        <Route path='/addproduct' element={<Protectedsite Component={Addproduct} />} />
+        <Route path='/addproduct/:id' element={<Protectedsite Component={Addproduct} />} />
         <Route path='/single/:id' element={<Singleproduct />} />
         <Route path='/cart' element={<Protectedsite  Component={Addtocart} />} />
         <Route path='/ordercheckout' element={<Protectedsite Component={Oredrecheckout} />} />
