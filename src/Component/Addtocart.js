@@ -36,8 +36,6 @@ export default function Addtocart() {
 
                     return <>
                       <tr>
-
-
                         <td className="p-4">
                           <div className="media align-items-center">
                             <img src={item.image} className="d-block ui-w-40 ui-bordered mr-4" alt />

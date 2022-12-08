@@ -6,7 +6,7 @@ const Cartcontext = createContext()
 
 const getcartdata = () => {
     const localstoragedataaa = localStorage.getItem("cartdataa")
-    if (localstoragedataaa === []) {
+    if (localstoragedataaa === null) {
         // if (localstoragedataaa.length === 0) {
         return []
     }
@@ -18,8 +18,8 @@ const getcartdata = () => {
 const initialstate = {
     // cart: [],
     cart: getcartdata(),
-    cart_item: "",
-    cart_amount: "",
+    cart_item: 0,
+    cart_amount: 0,
 }
 
 export default function Cartprovider({ children }) {

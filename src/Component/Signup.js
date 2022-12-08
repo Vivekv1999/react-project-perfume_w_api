@@ -62,7 +62,7 @@ export default function Signup() {
               <div className="login__field">
                 <i className="login__icon fas fa-user" />
                 <input type="text" className="login__input" name="uname" value={values.uname} onChange={handleChange} onBlur={handleBlur} placeholder="User name" /><br />
-                {errors.uname && touched.uname ? (<span style={{ color: 'red' }}> {errors.uname}</span>) : null}
+                {errors.uname && touched.uname ? (  <span style={{ color: 'red' }}> {errors.uname}</span>) : null}
               </div>
               <div className="login__field">
                 <i class="login__icon fa-solid fa-envelope"></i>

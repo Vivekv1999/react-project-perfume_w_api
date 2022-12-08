@@ -7,6 +7,7 @@ import { TbReplace } from "react-icons/tb";
 import Carttoggle from './Carttoggle';
 import { LinkContainer } from 'react-router-bootstrap';
 import { useCartcontext } from '../context/Cartcontext';
+import axios from 'axios';
 
 
 const single_api = "http://localhost:3008/product"
@@ -25,15 +26,22 @@ export default function Singleproduct() {
         quentity < stock ? setquentity(quentity + 1) : setquentity(stock)
     }
 
-    useEffect(() => {
-        // fetch(`https://fakestoreapi.com/products/${id}`)
-        fetch(`http://localhost:3008/product/${id}`)
-            .then((res) => res.json())
-            .then(data => {
-                console.log(data.image)
-                setproduct(data)
-            })
+    useEffect( () => {
+        // fetch(`http://localhost:3008/product/${id}`)
+        //     .then((res) => res.json())
+        //     .then(data => {
+        //         console.log(data.image)
+        //         setproduct(data)
+        //     })
+        ggg()     //2nd method mate aaa uncommit 
     }, [])
+
+    /////2nd method fech sivay ni aa axios method mate aa
+    const ggg = async () => {
+        const ddd = await axios.get(`http://localhost:3008/product/${id}`)
+        const jjj = await ddd.data
+        setproduct(jjj)
+    }
 
     // const { getSingleproduct, singleproduct } = useContext(Prcontext)
     // useEffect(() => {

@@ -70,7 +70,7 @@ export default function Cartreducer(state, action) {
             ...state,
             cart_item:0,
             cart_amount:0,
-            cart:[   ]
+            cart:[ ]
         }
     }
 
